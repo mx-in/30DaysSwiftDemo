@@ -1,0 +1,16 @@
+language: objective-c
+os: osx
+osx_image: xcode8.1
+
+-before_install:
+ - |
+    gem install xcpretty -N --no-ri --no-rdoc
+script:
+- |
+    xcodebuild clean build -project DailySwift.xcodeproj -scheme DailySwift -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' | xcpretty
+
+after_success:
+- |
+   bash <(curl -s https://codecov.io/bash)
+        
+
