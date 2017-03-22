@@ -12,6 +12,8 @@ class funny {
 
     var title = " "
     var description = " "
+    var test = "";
+
     var numberOfMembers = 0
     var numberOfPost = 0
     var featuredImage: UIImage!
