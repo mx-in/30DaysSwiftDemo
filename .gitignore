@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/macOS,swift
 
+# Vim
+*.swp
+
 ### macOS ###
 *.DS_Store
 .AppleDouble
