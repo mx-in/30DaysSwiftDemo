@@ -25,9 +25,11 @@ class DailySwiftTests: XCTestCase {
         funyUndreTest = nil
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFunny() {
+        
+        funyUndreTest.numberOfMembers += 5;
+        
+        XCTAssertEqual(funyUndreTest.numberOfMembers, 10, "test for numberOfMembers")
     }
     
 }
