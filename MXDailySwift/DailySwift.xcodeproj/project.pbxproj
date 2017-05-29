@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */; };
+		46D410DB1EDB30AF00047C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D410DA1EDB30AF00047C5A /* Assets.xcassets */; };
+		46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DC1EDB331400047C5A /* VideoCutter.swift */; };
 		46F051661E043990006930F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F051651E043990006930F5 /* AppDelegate.swift */; };
 		46F051681E043990006930F5 /* ProjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F051671E043990006930F5 /* ProjViewController.swift */; };
 		46F0516B1E043990006930F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F051691E043990006930F5 /* Main.storyboard */; };
-		46F0516D1E043990006930F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F0516C1E043990006930F5 /* Assets.xcassets */; };
 		46F051701E043990006930F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F0516E1E043990006930F5 /* LaunchScreen.storyboard */; };
 		46F0517B1E043990006930F5 /* MXDailySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F0517A1E043990006930F5 /* MXDailySwiftTests.swift */; };
 		46F051861E043990006930F5 /* MXDailySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F051851E043990006930F5 /* MXDailySwiftUITests.swift */; };
@@ -43,11 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46D410D11EDB2CDA00047C5A /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoSplashViewController.swift; path = "10-VideoBackground/VideoSplashViewController.swift"; sourceTree = "<group>"; };
+		46D410DA1EDB30AF00047C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D410DC1EDB331400047C5A /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCutter.swift; path = "10-VideoBackground/VideoCutter.swift"; sourceTree = "<group>"; };
 		46F051621E043990006930F5 /* DailySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F051651E043990006930F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F051671E043990006930F5 /* ProjViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjViewController.swift; sourceTree = "<group>"; };
 		46F0516A1E043990006930F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		46F0516C1E043990006930F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46F0516F1E043990006930F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46F051711E043990006930F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46F051761E043990006930F5 /* DailySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +97,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46D410D21EDB2DA300047C5A /* 01-StopWatch */ = {
+			isa = PBXGroup;
+			children = (
+				46F051971E044DEF006930F5 /* StopViewController.swift */,
+			);
+			name = "01-StopWatch";
+			sourceTree = "<group>";
+		};
+		46D410D31EDB2DF600047C5A /* 07-PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				46F051931E044035006930F5 /* PullToRefreshViewController.swift */,
+			);
+			name = "07-PullToRefresh";
+			sourceTree = "<group>";
+		};
+		46D410D41EDB2E5400047C5A /* 09-ImageScroller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "09-ImageScroller";
+			sourceTree = "<group>";
+		};
+		46D410D51EDB2E8000047C5A /* 10-VideoBackground */ = {
+			isa = PBXGroup;
+			children = (
+				46F051F01E06DEC6006930F5 /* VideoBackgroundVC.swift */,
+				46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */,
+				46D410DC1EDB331400047C5A /* VideoCutter.swift */,
+			);
+			name = "10-VideoBackground";
+			sourceTree = "<group>";
+		};
+		46D410D61EDB2EA700047C5A /* 08-RandomGradientColorMusic */ = {
+			isa = PBXGroup;
+			children = (
+				46F051A81E059901006930F5 /* RandomColorizationVC.swift */,
+			);
+			name = "08-RandomGradientColorMusic";
+			sourceTree = "<group>";
+		};
+		46D410D71EDB2F0B00047C5A /* 09-ImageScroller */ = {
+			isa = PBXGroup;
+			children = (
+				46F051EE1E0660A6006930F5 /* ImageScrollerEffectVC.swift */,
+			);
+			name = "09-ImageScroller";
+			sourceTree = "<group>";
+		};
 		46F051591E043990006930F5 = {
 			isa = PBXGroup;
 			children = (
@@ -115,17 +169,17 @@
 		46F051641E043990006930F5 /* MXDailySwift */ = {
 			isa = PBXGroup;
 			children = (
-				46F051651E043990006930F5 /* AppDelegate.swift */,
 				46F051671E043990006930F5 /* ProjViewController.swift */,
-				46F051971E044DEF006930F5 /* StopViewController.swift */,
-				46F051991E045253006930F5 /* Carousel Effect */,
-				46F051931E044035006930F5 /* PullToRefreshViewController.swift */,
-				46F051A81E059901006930F5 /* RandomColorizationVC.swift */,
-				46F051EE1E0660A6006930F5 /* ImageScrollerEffectVC.swift */,
-				46F051F01E06DEC6006930F5 /* VideoBackgroundVC.swift */,
-				46F051691E043990006930F5 /* Main.storyboard */,
-				46F0516C1E043990006930F5 /* Assets.xcassets */,
+				46F051651E043990006930F5 /* AppDelegate.swift */,
+				46D410D21EDB2DA300047C5A /* 01-StopWatch */,
+				46F051991E045253006930F5 /* 05-Carousel Effect */,
+				46D410D31EDB2DF600047C5A /* 07-PullToRefresh */,
+				46D410D61EDB2EA700047C5A /* 08-RandomGradientColorMusic */,
+				46D410D71EDB2F0B00047C5A /* 09-ImageScroller */,
+				46D410D41EDB2E5400047C5A /* 09-ImageScroller */,
+				46D410D51EDB2E8000047C5A /* 10-VideoBackground */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
+				46F051691E043990006930F5 /* Main.storyboard */,
 				46F051711E043990006930F5 /* Info.plist */,
 				46F051A51E059495006930F5 /* Sources */,
 			);
@@ -150,20 +204,22 @@
 			path = MXDailySwiftUITests;
 			sourceTree = "<group>";
 		};
-		46F051991E045253006930F5 /* Carousel Effect */ = {
+		46F051991E045253006930F5 /* 05-Carousel Effect */ = {
 			isa = PBXGroup;
 			children = (
 				46F0519A1E0452A6006930F5 /* funny.swift */,
 				46F0519B1E0452A6006930F5 /* funnyCell.swift */,
 				46F0519C1E0452A6006930F5 /* CarouseEViewController.swift */,
 			);
-			name = "Carousel Effect";
+			name = "05-Carousel Effect";
 			sourceTree = "<group>";
 		};
 		46F051A51E059495006930F5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				46D410DA1EDB30AF00047C5A /* Assets.xcassets */,
 				46F051A61E059616006930F5 /* Ecstasy.mp3 */,
+				46D410D11EDB2CDA00047C5A /* moments.mp4 */,
 			);
 			name = Sources;
 			path = ../DailySwift.xcodeproj;
@@ -235,13 +291,18 @@
 					New,
 				);
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = mx_in;
 				TargetAttributes = {
 					46F051611E043990006930F5 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = DA4MFDZ3GP;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					46F051751E043990006930F5 = {
 						CreatedOnToolsVersion = 8.1;
@@ -284,7 +345,7 @@
 			files = (
 				46F051701E043990006930F5 /* LaunchScreen.storyboard in Resources */,
 				46F051A71E059616006930F5 /* Ecstasy.mp3 in Resources */,
-				46F0516D1E043990006930F5 /* Assets.xcassets in Resources */,
+				46D410DB1EDB30AF00047C5A /* Assets.xcassets in Resources */,
 				46F0516B1E043990006930F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,8 +377,10 @@
 				46F051681E043990006930F5 /* ProjViewController.swift in Sources */,
 				46F051A91E059901006930F5 /* RandomColorizationVC.swift in Sources */,
 				46F0519D1E0452A6006930F5 /* funny.swift in Sources */,
+				46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */,
 				46F051F11E06DEC6006930F5 /* VideoBackgroundVC.swift in Sources */,
 				46F0519F1E0452A6006930F5 /* CarouseEViewController.swift in Sources */,
+				46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */,
 				46F051661E043990006930F5 /* AppDelegate.swift in Sources */,
 				46F051EF1E0660A6006930F5 /* ImageScrollerEffectVC.swift in Sources */,
 			);
@@ -392,6 +455,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -441,6 +505,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

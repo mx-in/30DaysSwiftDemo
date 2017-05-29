@@ -29,7 +29,7 @@ class DailySwiftTests: XCTestCase {
         
         funyUndreTest.numberOfMembers += 5;
         
-        XCTAssertEqual(funyUndreTest.numberOfMembers, 10, "test for numberOfMembers")
+        XCTAssertEqual(funyUndreTest.numberOfMembers, 5, "test for numberOfMembers")
     }
     
 }
