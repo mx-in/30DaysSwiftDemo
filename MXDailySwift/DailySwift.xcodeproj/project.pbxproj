@@ -10,6 +10,8 @@
 		46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */; };
 		46D410DB1EDB30AF00047C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D410DA1EDB30AF00047C5A /* Assets.xcassets */; };
 		46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DC1EDB331400047C5A /* VideoCutter.swift */; };
+		46D410DF1EDC48D800047C5A /* TestVideoSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DE1EDC48D800047C5A /* TestVideoSplash.swift */; };
+		46D410E01EDC4E4100047C5A /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 46D410D11EDB2CDA00047C5A /* moments.mp4 */; };
 		46F051661E043990006930F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F051651E043990006930F5 /* AppDelegate.swift */; };
 		46F051681E043990006930F5 /* ProjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F051671E043990006930F5 /* ProjViewController.swift */; };
 		46F0516B1E043990006930F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F051691E043990006930F5 /* Main.storyboard */; };
@@ -49,6 +51,7 @@
 		46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoSplashViewController.swift; path = "10-VideoBackground/VideoSplashViewController.swift"; sourceTree = "<group>"; };
 		46D410DA1EDB30AF00047C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46D410DC1EDB331400047C5A /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCutter.swift; path = "10-VideoBackground/VideoCutter.swift"; sourceTree = "<group>"; };
+		46D410DE1EDC48D800047C5A /* TestVideoSplash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVideoSplash.swift; sourceTree = "<group>"; };
 		46F051621E043990006930F5 /* DailySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F051651E043990006930F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F051671E043990006930F5 /* ProjViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +192,7 @@
 		46F051791E043990006930F5 /* MXDailySwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				46D410DE1EDC48D800047C5A /* TestVideoSplash.swift */,
 				46F0517A1E043990006930F5 /* MXDailySwiftTests.swift */,
 				46F0517C1E043990006930F5 /* Info.plist */,
 			);
@@ -343,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D410E01EDC4E4100047C5A /* moments.mp4 in Resources */,
 				46F051701E043990006930F5 /* LaunchScreen.storyboard in Resources */,
 				46F051A71E059616006930F5 /* Ecstasy.mp3 in Resources */,
 				46D410DB1EDB30AF00047C5A /* Assets.xcassets in Resources */,
@@ -390,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D410DF1EDC48D800047C5A /* TestVideoSplash.swift in Sources */,
 				46F0517B1E043990006930F5 /* MXDailySwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
