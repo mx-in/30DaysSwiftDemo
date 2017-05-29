@@ -194,6 +194,10 @@
                             <constraint firstItem="L9d-9y-AzF" firstAttribute="leading" secondItem="aYu-xi-Ti2" secondAttribute="leadingMargin" constant="11" id="s1s-PB-1P0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="KwG-0E-wTz" id="rp2-kj-mh9"/>
+                        <outlet property="signUpButton" destination="L9d-9y-AzF" id="ds3-75-Fwq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rl4-Kd-Dsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -437,13 +441,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ambience-1" translatesAutoresizingMaskIntoConstraints="NO" id="6kt-3t-1LS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambience-1" translatesAutoresizingMaskIntoConstraints="NO" id="6kt-3t-1LS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REI-WL-00I">
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REI-WL-00I">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Welcome" id="Ypj-lk-NcK"/>
@@ -451,6 +453,15 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6kt-3t-1LS" firstAttribute="leading" secondItem="qJS-Y7-1EW" secondAttribute="leadingMargin" constant="-16" id="R4h-3H-BrQ"/>
+                            <constraint firstItem="REI-WL-00I" firstAttribute="top" secondItem="R02-UK-Ygo" secondAttribute="bottom" constant="8" id="SkU-l7-sFH"/>
+                            <constraint firstItem="REI-WL-00I" firstAttribute="trailing" secondItem="6kt-3t-1LS" secondAttribute="trailing" id="cEO-jR-RGk"/>
+                            <constraint firstItem="xm7-uF-pUu" firstAttribute="top" secondItem="6kt-3t-1LS" secondAttribute="bottom" id="mTe-i4-dgT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6kt-3t-1LS" secondAttribute="trailing" constant="-16" id="qAL-9I-pwb"/>
+                            <constraint firstItem="REI-WL-00I" firstAttribute="leading" secondItem="6kt-3t-1LS" secondAttribute="leading" id="wzI-jM-75q"/>
+                            <constraint firstItem="6kt-3t-1LS" firstAttribute="top" secondItem="R02-UK-Ygo" secondAttribute="bottom" constant="-64" id="ysL-68-gJN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPO-vj-Nbw" userLabel="First Responder" sceneMemberID="firstResponder"/>

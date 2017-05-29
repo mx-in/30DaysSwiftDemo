@@ -72,5 +72,9 @@ class RandomColorizationVC: UIViewController {
         UIApplication.shared.isStatusBarHidden = true
 
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        audioPlayer.pause()
+    }
 
 }

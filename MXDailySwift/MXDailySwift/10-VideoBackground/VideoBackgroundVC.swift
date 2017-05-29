@@ -7,97 +7,36 @@
 //
 
 import UIKit
-import MediaPlayer
-import AVKit
 
-public enum ScalingModel {
-    case resize
-    case resizeAspect
-    case resizeAspectFill
-}
+class VideoBackgroundVC: VideoSplashViewController {
 
-
-class VideoBackgroundVC: UIViewController {
-
-    fileprivate let moviePlayer = AVPlayerViewController()
-    fileprivate var moviePlayerSoundLevel: Float = 1.0
-    open var contentURL: URL! {
-        didSet{
-            setMoviePlayer(contentURL)
-        }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
-    open var videoFrame: CGRect = CGRect()
-    open var startTime: CGFloat = 0.0
-    open var duration: CGFloat = 0.0
-    open var backgroundColor: UIColor = UIColor.black {
-        didSet {
-            view.backgroundColor = backgroundColor
-        }
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    override func viewDidLoad() {
+        loginButton.layer.cornerRadius = 4.0
+        signUpButton.layer.cornerRadius = 4.0
+        
+        setupVideoBackground()
     }
     
-    open var sound: Bool = true {
-        didSet {
-            if sound {
-                moviePlayerSoundLevel = 1.0
-            } else {
-                moviePlayerSoundLevel = 0.0
-            }
-        }
-    }
-    
-    open var alpha: CGFloat = CGFloat() {
-        didSet {
-            moviePlayer.view.alpha = alpha
-        }
-    }
-    
-    open var alwaysRepeat = true {
-        didSet {
-            NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime
-                , object: moviePlayer.player?.currentItem)
-        }
-    }
-    
-    open var fillMode: ScalingModel = .resizeAspectFill {
-        didSet {
-            switch fillMode {
-            case .resize:
-                moviePlayer.videoGravity = AVLayerVideoGravityResizeAspect
-            case .resizeAspectFill:
-                moviePlayer.videoGravity = AVVideoScalingModeResizeAspectFill
-            case .resizeAspect:
-                moviePlayer.videoGravity = AVLayerVideoGravityResizeAspect
-            }
-        }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        moviePlayer.view.frame = videoFrame
-        moviePlayer.showsPlaybackControls = false
-        view.addSubview(moviePlayer.view)
-        view.sendSubview(toBack: moviePlayer.view)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        NotificationCenter.default.removeObserver(NSNotification.Name.AVPlayerItemDidPlayToEndTime)
-    }
-    
-    fileprivate func setMoviePlayer(_ url: URL) {
-        let videoCutter = VideoCutter()
-        videoCutter.cropVideoWithURL(videoURL: url, startTime: startTime, duration: duration) { (videoPath, error) in
-            if let path = videoPath {
-                self.moviePlayer.player = AVPlayer(url: path)
-                self.moviePlayer.player?.play()
-                self.moviePlayer.player?.volume = self.moviePlayerSoundLevel
-            }
-        }
-    }
-    
-    func playerItemDidReachEnd() {
-        moviePlayer.player?.seek(to: kCMTimeZero)
-        moviePlayer.player?.play()
+    func setupVideoBackground() {
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "moments", ofType: "mp4")!)
+        
+        videoFrame = view.frame
+        fillMode = .resizeAspectFill
+        alwaysRepeat = true
+        sound = true
+        startTime = 2.0
+        alpha = 0.8
+        
+        contentURL = url
+//        view.isUserInteractionEnabled = false
     }
     
 }
+    
