@@ -38,7 +38,7 @@ open class VideoCutter: NSObject {
             }
             
             if let exportSession = exportSession as AVAssetExportSession? {
-                exportSession.outputURL = URL(string: outputURL)
+                exportSession.outputURL = URL(fileURLWithPath: outputURL)
                 exportSession.shouldOptimizeForNetworkUse = true
                 exportSession.outputFileType = AVFileTypeMPEG4
                 

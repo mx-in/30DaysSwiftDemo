@@ -28,12 +28,13 @@ class TestVideoSplash: XCTestCase {
         
         let promise = expectation(description: "cut video success")
         
-        videoCutter.cropVideoWithURL(videoURL: url, startTime: 11.0, duration: 1) { (videoPath, error) in
-            
-            XCTAssertNotNil(videoCutter)
-            promise.fulfill()
+        videoCutter.cropVideoWithURL(
+            videoURL: url,
+            startTime: 11.0,
+            duration: 1.0) { (videoPath, error) -> Void in
+                        XCTAssertNotNil(videoPath, "video cut has failed")
+                        promise.fulfill()
         }
-        
         waitForExpectations(timeout: 5.0, handler: nil)
     }
     
