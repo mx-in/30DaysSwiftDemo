@@ -12,6 +12,8 @@
 		46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DC1EDB331400047C5A /* VideoCutter.swift */; };
 		46D410DF1EDC48D800047C5A /* TestVideoSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DE1EDC48D800047C5A /* TestVideoSplash.swift */; };
 		46D410E01EDC4E4100047C5A /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 46D410D11EDB2CDA00047C5A /* moments.mp4 */; };
+		46D410E31EDDB6AE00047C5A /* ClearTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410E21EDDB6AE00047C5A /* ClearTableViewController.swift */; };
+		46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410E41EDDB6E300047C5A /* ClearTableViewCell.swift */; };
 		46F051661E043990006930F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F051651E043990006930F5 /* AppDelegate.swift */; };
 		46F051681E043990006930F5 /* ProjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F051671E043990006930F5 /* ProjViewController.swift */; };
 		46F0516B1E043990006930F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F051691E043990006930F5 /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		46D410DA1EDB30AF00047C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46D410DC1EDB331400047C5A /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCutter.swift; path = "10-VideoBackground/VideoCutter.swift"; sourceTree = "<group>"; };
 		46D410DE1EDC48D800047C5A /* TestVideoSplash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVideoSplash.swift; sourceTree = "<group>"; };
+		46D410E21EDDB6AE00047C5A /* ClearTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClearTableViewController.swift; path = "11-ClearTableViewCell/ClearTableViewController.swift"; sourceTree = "<group>"; };
+		46D410E41EDDB6E300047C5A /* ClearTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClearTableViewCell.swift; path = "11-ClearTableViewCell/ClearTableViewCell.swift"; sourceTree = "<group>"; };
 		46F051621E043990006930F5 /* DailySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F051651E043990006930F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F051671E043990006930F5 /* ProjViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,15 @@
 			name = "09-ImageScroller";
 			sourceTree = "<group>";
 		};
+		46D410E11EDDB5B500047C5A /* 11-ClearTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				46D410E21EDDB6AE00047C5A /* ClearTableViewController.swift */,
+				46D410E41EDDB6E300047C5A /* ClearTableViewCell.swift */,
+			);
+			name = "11-ClearTableViewCell";
+			sourceTree = "<group>";
+		};
 		46F051591E043990006930F5 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +186,7 @@
 				46D410D61EDB2EA700047C5A /* 08-RandomGradientColorMusic */,
 				46D410D71EDB2F0B00047C5A /* 09-ImageScroller */,
 				46D410D51EDB2E8000047C5A /* 10-VideoBackground */,
+				46D410E11EDDB5B500047C5A /* 11-ClearTableViewCell */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F051711E043990006930F5 /* Info.plist */,
@@ -372,8 +386,10 @@
 				46F051941E044035006930F5 /* PullToRefreshViewController.swift in Sources */,
 				46F0519E1E0452A6006930F5 /* funnyCell.swift in Sources */,
 				46F051681E043990006930F5 /* ProjViewController.swift in Sources */,
+				46D410E31EDDB6AE00047C5A /* ClearTableViewController.swift in Sources */,
 				46F051A91E059901006930F5 /* RandomColorizationVC.swift in Sources */,
 				46F0519D1E0452A6006930F5 /* funny.swift in Sources */,
+				46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */,
 				46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */,
 				46F051F11E06DEC6006930F5 /* VideoBackgroundVC.swift in Sources */,
 				46F0519F1E0452A6006930F5 /* CarouseEViewController.swift in Sources */,
