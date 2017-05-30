@@ -40,7 +40,10 @@ class PullToRefreshViewController: UIViewController, UITableViewDataSource {
         
         self.title = "emoji"
         
+//        lt row height is changed to the value set in Interface Builder. To get the expected self-sizing behavior for a cell that you create in Interface Builder, you must explicitly set rowHeight equal to UITableViewAutomaticDimension in your code.
         emojiTableView?.rowHeight = UITableViewAutomaticDimension
+        
+//        Providing a nonnegative estimate of the height of rows can improve the performance of loading the table view. If the table contains variable height rows
         emojiTableView?.estimatedRowHeight = 60.0
         emojiTableView?.tableFooterView = UIView(frame: CGRect.zero)
         emojiTableView?.separatorStyle = UITableViewCellSeparatorStyle.none
