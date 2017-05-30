@@ -11,7 +11,7 @@ import UIKit
 class ProjViewController: UITableViewController {
     
     let projCellIdentify = "projectCellIdentify"
-    let projects = ["StopWatch", "CarouselEffect", "PullToRefresh", "RandomColorization", "ImageScrollerEffect", "VideoBackground", "10-ClearTableViewController"]
+    let projects = ["StopWatch", "CarouselEffect", "PullToRefresh", "RandomColorization", "ImageScrollerEffect", "VideoBackground", "ClearTableViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class ProjViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        let cell = tableView.dequeueReusableCell(withIdentifier: projCellIdentify)! as UITableViewCell
         
-        cell.textLabel?.text = projects[indexPath.row]
+        cell.textLabel?.text = "\(indexPath.row + 1) - \(projects[indexPath.row])"
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         
         return cell;

@@ -50,7 +50,6 @@ class RandomColorizationVC: UIViewController {
         
         gradientLayer.colors = [color1, color2, color3, color4, color5]
         gradientLayer.locations = [0.10, 0.30, 0.50, 0.70, 0.90]
-        gradientLayer.locations = [0.10, 0.30, 0.50, 0.70, 0.90]
         gradientLayer.startPoint = CGPoint(x: 0, y:0);
         gradientLayer.endPoint = CGPoint(x: 1, y: 1);
         
