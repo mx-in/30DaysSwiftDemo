@@ -11,7 +11,7 @@ import UIKit
 class ProjViewController: UITableViewController {
     
     let projCellIdentify = "projectCellIdentify"
-    let projects = ["StopWatch", "CarouselEffect", "PullToRefresh", "RandomColorization", "ImageScrollerEffect", "VideoBackground", "ClearTableViewController"]
+    let projects = ["StopWatch", "CarouselEffect", "PullToRefresh", "RandomColorization", "ImageScrollerEffect", "VideoBackground", "ClearTableViewController", "LoginAnimation"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
