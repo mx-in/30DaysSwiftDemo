@@ -12,6 +12,8 @@ class ClearTableViewController: UITableViewController {
 
     var tableData = ["Read 3 article on Medium", "Cleanup bedroom", "Go for a run", "Hit the gym", "Build another swift project", "Movement training", "Fix the layout problem of a client project", "Write the experience of #30daysSwift", "Inbox Zero", "Booking the ticket to Chengdu", "Test the Adobe Project Comet", "Hop on a call to mom"]
     
+    var cellBackgroundForIndex: ((Int) -> UIColor)? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,8 +23,13 @@ class ClearTableViewController: UITableViewController {
         self.tableView.separatorStyle = .none
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         self.tableView.register(ClearTableViewCell.self, forCellReuseIdentifier: "ClearTableViewCell")
+        
+        cellBackgroundForIndex = {index in
+            let itemCount = self.tableData.count - 1
+            let color = (CGFloat(index) / CGFloat(itemCount)) * 0.6
+            return UIColor (red: 1.0, green: color, blue: 1.0, alpha: 1.0)
+        }
     }
-
 
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -54,10 +61,9 @@ class ClearTableViewController: UITableViewController {
     }
     
     func colorForIndex(_ index: Int) -> UIColor {
-        
-        let itemCount = tableData.count - 1
-        let color = (CGFloat(index) / CGFloat(itemCount)) * 0.6
-        
-        return UIColor (red: 1.0, green: color, blue: 1.0, alpha: 1.0)
+        guard let colorForIndex = cellBackgroundForIndex else {
+            return UIColor.white
+        }
+        return colorForIndex(index)
     }
 }
