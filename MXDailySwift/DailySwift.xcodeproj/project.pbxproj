@@ -11,6 +11,7 @@
 		467458E91EDF15FE00026CC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458E81EDF15FE00026CC7 /* LoginViewController.swift */; };
 		467458EC1EDFE73600026CC7 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458EB1EDFE73600026CC7 /* FirstTableViewController.swift */; };
 		467458EE1EDFE75B00026CC7 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458ED1EDFE75B00026CC7 /* SecondTableViewController.swift */; };
+		467458F01EE0FDE100026CC7 /* EmojiMachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */; };
 		46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */; };
 		46D410DB1EDB30AF00047C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D410DA1EDB30AF00047C5A /* Assets.xcassets */; };
 		46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DC1EDB331400047C5A /* VideoCutter.swift */; };
@@ -57,6 +58,7 @@
 		467458E81EDF15FE00026CC7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "12-LoginAnimation/LoginViewController.swift"; sourceTree = "<group>"; };
 		467458EB1EDFE73600026CC7 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstTableViewController.swift; path = "13-AnimateTableViewCell/FirstTableViewController.swift"; sourceTree = "<group>"; };
 		467458ED1EDFE75B00026CC7 /* SecondTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondTableViewController.swift; path = "13-AnimateTableViewCell/SecondTableViewController.swift"; sourceTree = "<group>"; };
+		467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojiMachineViewController.swift; path = "14-EmojiMachine/EmojiMachineViewController.swift"; sourceTree = "<group>"; };
 		46D410D11EDB2CDA00047C5A /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
 		46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoSplashViewController.swift; path = "10-VideoBackground/VideoSplashViewController.swift"; sourceTree = "<group>"; };
 		46D410DA1EDB30AF00047C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +130,14 @@
 				467458ED1EDFE75B00026CC7 /* SecondTableViewController.swift */,
 			);
 			name = "13-AnimateTableViewCell";
+			sourceTree = "<group>";
+		};
+		467458F11EE1233200026CC7 /* 14-EmojiMachine */ = {
+			isa = PBXGroup;
+			children = (
+				467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */,
+			);
+			name = "14-EmojiMachine";
 			sourceTree = "<group>";
 		};
 		46D410D21EDB2DA300047C5A /* 01-StopWatch */ = {
@@ -215,6 +225,7 @@
 				46D410E11EDDB5B500047C5A /* 11-ClearTableViewCell */,
 				467458E51EDF104F00026CC7 /* 12-LoginAnimation */,
 				467458EA1EDFA5E700026CC7 /* 13-AnimateTableViewCell */,
+				467458F11EE1233200026CC7 /* 14-EmojiMachine */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F051711E043990006930F5 /* Info.plist */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
@@ -411,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F051981E044DEF006930F5 /* StopViewController.swift in Sources */,
+				467458F01EE0FDE100026CC7 /* EmojiMachineViewController.swift in Sources */,
 				46F051941E044035006930F5 /* PullToRefreshViewController.swift in Sources */,
 				46F0519E1E0452A6006930F5 /* funnyCell.swift in Sources */,
 				46F051681E043990006930F5 /* ProjViewController.swift in Sources */,

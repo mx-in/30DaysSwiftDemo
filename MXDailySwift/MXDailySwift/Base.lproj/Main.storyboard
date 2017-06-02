@@ -44,6 +44,7 @@
                         <segue destination="7rZ-hU-4cI" kind="show" identifier="ClearTableViewController" id="q5l-Hc-jir"/>
                         <segue destination="a3l-9m-y7Y" kind="show" identifier="LoginAnimation" id="aCa-pE-WzK"/>
                         <segue destination="TJD-dh-aPh" kind="show" identifier="AnimationTable" id="TBp-Kl-o9G"/>
+                        <segue destination="VbX-WK-Eme" kind="show" identifier="EmojiMachine" id="gOd-vo-B3d"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaV-Uu-EJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -458,9 +459,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzI-M6-Zti" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-354" y="752"/>
+            <point key="canvasLocation" x="-417" y="752"/>
         </scene>
-        <!--First Table View Controller-->
+        <!--AnimationTable-->
         <scene sceneID="3Md-c0-Ubm">
             <objects>
                 <tableViewController id="TJD-dh-aPh" customClass="FirstTableViewController" customModule="DailySwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -486,12 +487,84 @@
                             <outlet property="delegate" destination="TJD-dh-aPh" id="RPl-9B-57b"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="AnimationTable" id="Blm-sS-A3R"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nco-RZ-LKo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-273" y="-9"/>
+            <point key="canvasLocation" x="945" y="752"/>
         </scene>
-        <!--Login View Controller-->
+        <!--EmojiMachine-->
+        <scene sceneID="IbX-EM-0Ci">
+            <objects>
+                <viewController id="VbX-WK-Eme" customClass="EmojiMachineViewController" customModule="DailySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gvX-Sz-VQk"/>
+                        <viewControllerLayoutGuide type="bottom" id="oYZ-1B-Lt9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oHJ-Di-ccB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace" translatesAutoresizingMaskIntoConstraints="NO" id="byb-M9-ZuT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCE-n0-Icc">
+                                <rect key="frame" x="0.0" y="225.5" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84K-50-bWz">
+                                <rect key="frame" x="19" y="483" width="336" height="49"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="pwB-ei-kQR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="goButtonTouched:" destination="VbX-WK-Eme" eventType="touchUpInside" id="Znp-Ne-79w"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbi-cb-ib4">
+                                <rect key="frame" x="0.0" y="593" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nJK-Bv-ZGP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="byb-M9-ZuT" firstAttribute="leading" secondItem="oHJ-Di-ccB" secondAttribute="leading" id="2bV-U9-WwV"/>
+                            <constraint firstItem="LCE-n0-Icc" firstAttribute="leading" secondItem="oHJ-Di-ccB" secondAttribute="leading" id="64J-9E-2KC"/>
+                            <constraint firstAttribute="trailing" secondItem="LCE-n0-Icc" secondAttribute="trailing" id="DZp-80-5lx"/>
+                            <constraint firstItem="byb-M9-ZuT" firstAttribute="top" secondItem="oHJ-Di-ccB" secondAttribute="top" id="ETC-Li-7MZ"/>
+                            <constraint firstItem="byb-M9-ZuT" firstAttribute="centerY" secondItem="oHJ-Di-ccB" secondAttribute="centerY" id="O6a-CJ-tEV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="84K-50-bWz" secondAttribute="trailing" constant="4" id="VpK-XX-ZwS"/>
+                            <constraint firstAttribute="trailing" secondItem="byb-M9-ZuT" secondAttribute="trailing" id="XVy-cO-roe"/>
+                            <constraint firstItem="84K-50-bWz" firstAttribute="top" secondItem="LCE-n0-Icc" secondAttribute="bottom" constant="41.5" id="eO9-bG-VDU"/>
+                            <constraint firstAttribute="trailing" secondItem="Xbi-cb-ib4" secondAttribute="trailing" id="i58-H6-BEe"/>
+                            <constraint firstItem="LCE-n0-Icc" firstAttribute="centerX" secondItem="oHJ-Di-ccB" secondAttribute="centerX" id="kem-km-QiS"/>
+                            <constraint firstItem="Xbi-cb-ib4" firstAttribute="leading" secondItem="oHJ-Di-ccB" secondAttribute="leading" id="mJd-OK-ycX"/>
+                            <constraint firstItem="Xbi-cb-ib4" firstAttribute="top" secondItem="84K-50-bWz" secondAttribute="bottom" constant="61" id="mml-X7-C1F"/>
+                            <constraint firstItem="84K-50-bWz" firstAttribute="leading" secondItem="oHJ-Di-ccB" secondAttribute="leadingMargin" constant="3" id="pn9-Gz-Ups"/>
+                            <constraint firstItem="LCE-n0-Icc" firstAttribute="centerY" secondItem="oHJ-Di-ccB" secondAttribute="centerY" id="t5i-lk-dzg"/>
+                            <constraint firstItem="oYZ-1B-Lt9" firstAttribute="top" secondItem="byb-M9-ZuT" secondAttribute="bottom" id="tbi-NC-VPv"/>
+                            <constraint firstItem="byb-M9-ZuT" firstAttribute="centerX" secondItem="oHJ-Di-ccB" secondAttribute="centerX" id="uAF-Ae-t2n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="EmojiMachine" id="NWI-lN-GEG"/>
+                    <connections>
+                        <outlet property="emojiPickView" destination="LCE-n0-Icc" id="Uva-gW-Kfl"/>
+                        <outlet property="goButton" destination="84K-50-bWz" id="eK9-9T-CnM"/>
+                        <outlet property="scoreLabel" destination="Xbi-cb-ib4" id="bmE-lU-z4s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mxe-n5-Se5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="751.57421289355329"/>
+        </scene>
+        <!--AnimationLogin-->
         <scene sceneID="xBS-z5-gW4">
             <objects>
                 <viewController id="a3l-9m-y7Y" customClass="LoginViewController" customModule="DailySwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -540,6 +613,7 @@
                             <constraint firstItem="xtm-52-jL0" firstAttribute="top" secondItem="E52-hb-ISC" secondAttribute="bottom" constant="38" id="ojp-sB-vWH"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="AnimationLogin" id="E45-WI-Va2"/>
                     <connections>
                         <outlet property="loginButton" destination="0Di-60-sTj" id="9jj-Jg-021"/>
                         <outlet property="signUpButton" destination="XL2-as-65B" id="Ura-O4-sta"/>
@@ -547,7 +621,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2M3-nV-E3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="374" y="752"/>
+            <point key="canvasLocation" x="271" y="752"/>
         </scene>
         <!--Video Splash View Controller-->
         <scene sceneID="Poz-ft-SLL">
@@ -586,7 +660,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPO-vj-Nbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1072" y="1574"/>
+            <point key="canvasLocation" x="-1071" y="1420"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="DdV-pQ-0Cl">
@@ -687,7 +761,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9n5-Wi-ZDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="373.60000000000002" y="1453.2233883058473"/>
+            <point key="canvasLocation" x="270" y="1404"/>
         </scene>
         <!--Second Table View Controller-->
         <scene sceneID="Yvt-6d-j4b">
@@ -715,11 +789,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MzN-zj-m9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="-9"/>
+            <point key="canvasLocation" x="945" y="1404"/>
         </scene>
     </scenes>
     <resources>
         <image name="Back-icon" width="14" height="24"/>
+        <image name="Hyperspace" width="621" height="1104"/>
         <image name="ambience-1" width="375" height="667"/>
         <image name="blue" width="375" height="667"/>
         <image name="bodyline" width="596" height="595"/>
