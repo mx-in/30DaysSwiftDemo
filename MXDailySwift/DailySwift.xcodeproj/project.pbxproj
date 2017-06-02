@@ -191,6 +191,13 @@
 			name = "11-ClearTableViewCell";
 			sourceTree = "<group>";
 		};
+		46EB83C61EE1C3D200FE8336 /* 15- AnimatedSplash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "15- AnimatedSplash";
+			sourceTree = "<group>";
+		};
 		46F051591E043990006930F5 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +233,7 @@
 				467458E51EDF104F00026CC7 /* 12-LoginAnimation */,
 				467458EA1EDFA5E700026CC7 /* 13-AnimateTableViewCell */,
 				467458F11EE1233200026CC7 /* 14-EmojiMachine */,
+				46EB83C61EE1C3D200FE8336 /* 15- AnimatedSplash */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F051711E043990006930F5 /* Info.plist */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,

@@ -210,7 +210,7 @@
         <!--Navigation Controller-->
         <scene sceneID="rGW-er-guC">
             <objects>
-                <navigationController id="26P-iU-juw" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RootViewController" id="26P-iU-juw" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="7oG-aT-i6f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
