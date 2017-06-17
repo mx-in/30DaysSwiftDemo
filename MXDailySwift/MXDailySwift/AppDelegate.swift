@@ -19,7 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let showAnimation = true // let it be true if you want to show animation splash
+        
+//        let showAnimation = true // let it be true if you want to show animation splash
+        
+        let showAnimation = false
         
         guard showAnimation else {
             return true

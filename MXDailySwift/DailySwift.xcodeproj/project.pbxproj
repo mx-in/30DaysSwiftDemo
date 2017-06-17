@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4619695B1EF2A15F00029FE4 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619695A1EF2A15F00029FE4 /* MenuTableViewController.swift */; };
+		4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619695C1EF2A1B900029FE4 /* MenuTransitionManager.swift */; };
+		462854A81EF3BD4800DD46D0 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462854A71EF3BD4800DD46D0 /* MenuTableViewCell.swift */; };
 		467458E71EDF15E000026CC7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458E61EDF15E000026CC7 /* SignUpViewController.swift */; };
 		467458E91EDF15FE00026CC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458E81EDF15FE00026CC7 /* LoginViewController.swift */; };
 		467458EC1EDFE73600026CC7 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458EB1EDFE73600026CC7 /* FirstTableViewController.swift */; };
 		467458EE1EDFE75B00026CC7 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458ED1EDFE75B00026CC7 /* SecondTableViewController.swift */; };
 		467458F01EE0FDE100026CC7 /* EmojiMachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */; };
+		46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */; };
+		46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */; };
 		46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */; };
-		46D410DB1EDB30AF00047C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D410DA1EDB30AF00047C5A /* Assets.xcassets */; };
 		46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DC1EDB331400047C5A /* VideoCutter.swift */; };
 		46D410DF1EDC48D800047C5A /* TestVideoSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DE1EDC48D800047C5A /* TestVideoSplash.swift */; };
 		46D410E01EDC4E4100047C5A /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 46D410D11EDB2CDA00047C5A /* moments.mp4 */; };
@@ -55,14 +59,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4619695A1EF2A15F00029FE4 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = "16-SlideMenu/MenuTableViewController.swift"; sourceTree = "<group>"; };
+		4619695C1EF2A1B900029FE4 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTransitionManager.swift; path = "16-SlideMenu/MenuTransitionManager.swift"; sourceTree = "<group>"; };
+		462854A71EF3BD4800DD46D0 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = "16-SlideMenu/MenuTableViewCell.swift"; sourceTree = "<group>"; };
 		467458E61EDF15E000026CC7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "12-LoginAnimation/SignUpViewController.swift"; sourceTree = "<group>"; };
 		467458E81EDF15FE00026CC7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "12-LoginAnimation/LoginViewController.swift"; sourceTree = "<group>"; };
 		467458EB1EDFE73600026CC7 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstTableViewController.swift; path = "13-AnimateTableViewCell/FirstTableViewController.swift"; sourceTree = "<group>"; };
 		467458ED1EDFE75B00026CC7 /* SecondTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondTableViewController.swift; path = "13-AnimateTableViewCell/SecondTableViewController.swift"; sourceTree = "<group>"; };
 		467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojiMachineViewController.swift; path = "14-EmojiMachine/EmojiMachineViewController.swift"; sourceTree = "<group>"; };
+		46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewController.swift; path = "16-SlideMenu/NewsTableViewController.swift"; sourceTree = "<group>"; };
+		46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = "16-SlideMenu/NewsTableViewCell.swift"; sourceTree = "<group>"; };
 		46D410D11EDB2CDA00047C5A /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
 		46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoSplashViewController.swift; path = "10-VideoBackground/VideoSplashViewController.swift"; sourceTree = "<group>"; };
-		46D410DA1EDB30AF00047C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46D410DC1EDB331400047C5A /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCutter.swift; path = "10-VideoBackground/VideoCutter.swift"; sourceTree = "<group>"; };
 		46D410DE1EDC48D800047C5A /* TestVideoSplash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVideoSplash.swift; sourceTree = "<group>"; };
 		46D410E21EDDB6AE00047C5A /* ClearTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClearTableViewController.swift; path = "11-ClearTableViewCell/ClearTableViewController.swift"; sourceTree = "<group>"; };
@@ -89,6 +97,7 @@
 		46F051A81E059901006930F5 /* RandomColorizationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomColorizationVC.swift; path = "08-RandomColorization/RandomColorizationVC.swift"; sourceTree = "<group>"; };
 		46F051EE1E0660A6006930F5 /* ImageScrollerEffectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageScrollerEffectVC.swift; path = "09 -ImageScroller/ImageScrollerEffectVC.swift"; sourceTree = "<group>"; };
 		46F051F01E06DEC6006930F5 /* VideoBackgroundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoBackgroundVC.swift; path = "10-VideoBackground/VideoBackgroundVC.swift"; sourceTree = "<group>"; };
+		46FBEFD61EF3B8D60053F9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +149,18 @@
 				467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */,
 			);
 			name = "14-EmojiMachine";
+			sourceTree = "<group>";
+		};
+		46834DED1EEEE44B00CF0579 /* 16-SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */,
+				46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */,
+				4619695A1EF2A15F00029FE4 /* MenuTableViewController.swift */,
+				462854A71EF3BD4800DD46D0 /* MenuTableViewCell.swift */,
+				4619695C1EF2A1B900029FE4 /* MenuTransitionManager.swift */,
+			);
+			name = "16-SlideMenu";
 			sourceTree = "<group>";
 		};
 		46D410D21EDB2DA300047C5A /* 01-StopWatch */ = {
@@ -237,9 +258,11 @@
 				467458EA1EDFA5E700026CC7 /* 13-AnimateTableViewCell */,
 				467458F11EE1233200026CC7 /* 14-EmojiMachine */,
 				46EB83C61EE1C3D200FE8336 /* 15- AnimatedSplash */,
+				46834DED1EEEE44B00CF0579 /* 16-SlideMenu */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F051711E043990006930F5 /* Info.plist */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
+				46FBEFD61EF3B8D60053F9BA /* Assets.xcassets */,
 				46F051A51E059495006930F5 /* Sources */,
 			);
 			path = MXDailySwift;
@@ -277,7 +300,6 @@
 		46F051A51E059495006930F5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				46D410DA1EDB30AF00047C5A /* Assets.xcassets */,
 				46F051A61E059616006930F5 /* Ecstasy.mp3 */,
 				46D410D11EDB2CDA00047C5A /* moments.mp4 */,
 			);
@@ -351,7 +373,7 @@
 					New,
 				);
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = mx_in;
 				TargetAttributes = {
 					46F051611E043990006930F5 = {
@@ -406,7 +428,6 @@
 				46D410E01EDC4E4100047C5A /* moments.mp4 in Resources */,
 				46F051701E043990006930F5 /* LaunchScreen.storyboard in Resources */,
 				46F051A71E059616006930F5 /* Ecstasy.mp3 in Resources */,
-				46D410DB1EDB30AF00047C5A /* Assets.xcassets in Resources */,
 				46F0516B1E043990006930F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,15 +455,18 @@
 			files = (
 				46F051981E044DEF006930F5 /* StopViewController.swift in Sources */,
 				467458F01EE0FDE100026CC7 /* EmojiMachineViewController.swift in Sources */,
+				4619695B1EF2A15F00029FE4 /* MenuTableViewController.swift in Sources */,
 				46F051941E044035006930F5 /* PullToRefreshViewController.swift in Sources */,
 				46F0519E1E0452A6006930F5 /* funnyCell.swift in Sources */,
 				46F051681E043990006930F5 /* ProjViewController.swift in Sources */,
+				46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */,
 				46D410E31EDDB6AE00047C5A /* ClearTableViewController.swift in Sources */,
 				46F051A91E059901006930F5 /* RandomColorizationVC.swift in Sources */,
 				46F0519D1E0452A6006930F5 /* funny.swift in Sources */,
 				467458EE1EDFE75B00026CC7 /* SecondTableViewController.swift in Sources */,
 				46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */,
 				46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */,
+				46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */,
 				467458EC1EDFE73600026CC7 /* FirstTableViewController.swift in Sources */,
 				467458E71EDF15E000026CC7 /* SignUpViewController.swift in Sources */,
 				46F051F11E06DEC6006930F5 /* VideoBackgroundVC.swift in Sources */,
@@ -450,8 +474,10 @@
 				467458E91EDF15FE00026CC7 /* LoginViewController.swift in Sources */,
 				46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */,
 				46F051661E043990006930F5 /* AppDelegate.swift in Sources */,
+				4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */,
 				46F051EF1E0660A6006930F5 /* ImageScrollerEffectVC.swift in Sources */,
 				46EB83C81EE1D91D00FE8336 /* SplashAnimation.swift in Sources */,
+				462854A81EF3BD4800DD46D0 /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +542,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -524,7 +552,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -566,7 +598,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -574,7 +608,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;

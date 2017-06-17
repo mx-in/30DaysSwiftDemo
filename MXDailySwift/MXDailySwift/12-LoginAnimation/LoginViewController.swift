@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
+    @IBOutlet weak var loginHightConstraint: NSLayoutConstraint!
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
