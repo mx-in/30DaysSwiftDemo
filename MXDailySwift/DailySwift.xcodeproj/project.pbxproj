@@ -17,6 +17,10 @@
 		467458F01EE0FDE100026CC7 /* EmojiMachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */; };
 		46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */; };
 		46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */; };
+		468D9F4F1FB99BB4008DC057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FBEFD61EF3B8D60053F9BA /* Assets.xcassets */; };
+		469561501FBC683100E60233 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695614E1FBC683100E60233 /* MainViewController.swift */; };
+		469561511FBC683100E60233 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695614F1FBC683100E60233 /* MenuViewController.swift */; };
+		469561531FBC685500E60233 /* TumblrMenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469561521FBC685500E60233 /* TumblrMenuTransitionManager.swift */; };
 		46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */; };
 		46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DC1EDB331400047C5A /* VideoCutter.swift */; };
 		46D410DF1EDC48D800047C5A /* TestVideoSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DE1EDC48D800047C5A /* TestVideoSplash.swift */; };
@@ -69,6 +73,9 @@
 		467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojiMachineViewController.swift; path = "14-EmojiMachine/EmojiMachineViewController.swift"; sourceTree = "<group>"; };
 		46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewController.swift; path = "16-SlideMenu/NewsTableViewController.swift"; sourceTree = "<group>"; };
 		46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = "16-SlideMenu/NewsTableViewCell.swift"; sourceTree = "<group>"; };
+		4695614E1FBC683100E60233 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "17-TumblrMenu/MainViewController.swift"; sourceTree = "<group>"; };
+		4695614F1FBC683100E60233 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "17-TumblrMenu/MenuViewController.swift"; sourceTree = "<group>"; };
+		469561521FBC685500E60233 /* TumblrMenuTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TumblrMenuTransitionManager.swift; path = "17-TumblrMenu/TumblrMenuTransitionManager.swift"; sourceTree = "<group>"; };
 		46D410D11EDB2CDA00047C5A /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
 		46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoSplashViewController.swift; path = "10-VideoBackground/VideoSplashViewController.swift"; sourceTree = "<group>"; };
 		46D410DC1EDB331400047C5A /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCutter.swift; path = "10-VideoBackground/VideoCutter.swift"; sourceTree = "<group>"; };
@@ -161,6 +168,16 @@
 				4619695C1EF2A1B900029FE4 /* MenuTransitionManager.swift */,
 			);
 			name = "16-SlideMenu";
+			sourceTree = "<group>";
+		};
+		469561491FBC614F00E60233 /* 17-TumblrMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4695614E1FBC683100E60233 /* MainViewController.swift */,
+				4695614F1FBC683100E60233 /* MenuViewController.swift */,
+				469561521FBC685500E60233 /* TumblrMenuTransitionManager.swift */,
+			);
+			name = "17-TumblrMenu";
 			sourceTree = "<group>";
 		};
 		46D410D21EDB2DA300047C5A /* 01-StopWatch */ = {
@@ -259,6 +276,7 @@
 				467458F11EE1233200026CC7 /* 14-EmojiMachine */,
 				46EB83C61EE1C3D200FE8336 /* 15- AnimatedSplash */,
 				46834DED1EEEE44B00CF0579 /* 16-SlideMenu */,
+				469561491FBC614F00E60233 /* 17-TumblrMenu */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F051711E043990006930F5 /* Info.plist */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
@@ -425,6 +443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468D9F4F1FB99BB4008DC057 /* Assets.xcassets in Resources */,
 				46D410E01EDC4E4100047C5A /* moments.mp4 in Resources */,
 				46F051701E043990006930F5 /* LaunchScreen.storyboard in Resources */,
 				46F051A71E059616006930F5 /* Ecstasy.mp3 in Resources */,
@@ -458,8 +477,11 @@
 				4619695B1EF2A15F00029FE4 /* MenuTableViewController.swift in Sources */,
 				46F051941E044035006930F5 /* PullToRefreshViewController.swift in Sources */,
 				46F0519E1E0452A6006930F5 /* funnyCell.swift in Sources */,
+				469561531FBC685500E60233 /* TumblrMenuTransitionManager.swift in Sources */,
 				46F051681E043990006930F5 /* ProjViewController.swift in Sources */,
+				469561501FBC683100E60233 /* MainViewController.swift in Sources */,
 				46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */,
+				469561511FBC683100E60233 /* MenuViewController.swift in Sources */,
 				46D410E31EDDB6AE00047C5A /* ClearTableViewController.swift in Sources */,
 				46F051A91E059901006930F5 /* RandomColorizationVC.swift in Sources */,
 				46F0519D1E0452A6006930F5 /* funny.swift in Sources */,
