@@ -22,12 +22,6 @@ class NewsTableViewController: UITableViewController, MenuTransitionManagerDeleg
         self.title = "Everyday Moments"
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         self.view.backgroundColor = UIColor(red:0.062, green:0.062, blue:0.07, alpha:1)
-        if #available(iOS 11.0, *) {
-            self.navigationController?.navigationItem.largeTitleDisplayMode = .always
-        } else {
-            // Fallback on earlier versions
-        }
-        
     }
     
     //    MARK: - MenuTransitionManagerDelegate
