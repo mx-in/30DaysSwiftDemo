@@ -24,7 +24,6 @@ class StopViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        print(counter)
         timeLabel.text = String(counter)
         super.viewDidLoad()
         

@@ -18,8 +18,6 @@ class CarouseEViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "CarouselEffect"
-        
-        var img = UIImage(named: "hello")!
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
