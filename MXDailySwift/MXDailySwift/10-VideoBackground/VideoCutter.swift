@@ -13,8 +13,6 @@ extension String {
     var convert: NSString { return (self as NSString) }
 }
 
-
-
 open class VideoCutter: NSObject {
     open func cropVideoWithURL(videoURL url: URL, startTime: CGFloat, duration: CGFloat, completion: ((_ videoPath: URL?, _ error: NSError?) -> Void)?) {
         let priority = DispatchQoS.QoSClass.default

@@ -367,7 +367,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtM-tv-mEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="-844"/>
+            <point key="canvasLocation" x="-284" y="-846"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="PWL-fw-5hx">
@@ -561,6 +561,11 @@
                                             <color key="textColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03a-JR-DXu">
+                                            <rect key="frame" x="205" y="414" width="100" height="100"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" image="Audio"/>
+                                        </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9U-UC-aAs">
                                             <rect key="frame" x="0.0" y="594" width="375" height="33"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
@@ -568,13 +573,8 @@
                                                 <color key="titleColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
-                                                <action selector="didClickNeverMindBtn:" destination="SvW-d8-7oA" eventType="touchUpInside" id="duw-8G-YqM"/>
+                                                <segue destination="40N-Td-MzS" kind="unwind" unwindAction="unwindToMain:" id="r9g-vU-95N"/>
                                             </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03a-JR-DXu">
-                                            <rect key="frame" x="205" y="414" width="100" height="100"/>
-                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <state key="normal" image="Audio"/>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -631,8 +631,23 @@
                             <constraint firstItem="SBq-XH-2gx" firstAttribute="leading" secondItem="sZ1-Ev-mQt" secondAttribute="leading" id="zTF-NK-afM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="audioButton" destination="03a-JR-DXu" id="ggo-5s-94b"/>
+                        <outlet property="audioLabel" destination="kyu-ER-ews" id="yi2-HJ-3Ff"/>
+                        <outlet property="chatButton" destination="imC-z9-l9B" id="EyR-ic-PFA"/>
+                        <outlet property="chatLabel" destination="4bP-aN-BRL" id="ISH-BF-QFj"/>
+                        <outlet property="linkButton" destination="mLY-YM-t2t" id="zIa-js-Ja4"/>
+                        <outlet property="linkLabel" destination="mU3-cd-H5d" id="kya-Eo-IHb"/>
+                        <outlet property="photoButton" destination="3uH-TH-4j3" id="EBL-OY-2KH"/>
+                        <outlet property="photoLabel" destination="Fuo-id-c2w" id="wuS-hi-1qK"/>
+                        <outlet property="quoteButton" destination="ELS-5U-e6r" id="3md-ur-Ke2"/>
+                        <outlet property="quoteLabel" destination="mq6-cr-n3a" id="WCS-g3-SmN"/>
+                        <outlet property="textButton" destination="x21-FX-Jgk" id="pTB-M7-X9C"/>
+                        <outlet property="textLabel" destination="mTC-a3-SSX" id="ey5-nB-JJT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2h-L9-FS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="40N-Td-MzS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1406" y="-839"/>
         </scene>
@@ -668,7 +683,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="260"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUr-eD-Jxh">
-                                        <rect key="frame" x="0.0" y="61" width="375" height="139"/>
+                                        <rect key="frame" x="159.5" y="61" width="56" height="139"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="139" id="Ifv-Uh-AKp"/>
                                         </constraints>
@@ -677,9 +692,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRG-dM-8jq">
-                                        <rect key="frame" x="294" y="29" width="52" height="30"/>
+                                        <rect key="frame" x="307" y="29" width="39" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="52" id="aJE-T8-KCP"/>
+                                            <constraint firstAttribute="height" constant="30" id="MOS-Dx-mgF"/>
+                                            <constraint firstAttribute="width" constant="39" id="Ys3-K4-F7p"/>
                                         </constraints>
                                         <state key="normal" title="Reset">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -691,11 +707,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="AUr-eD-Jxh" secondAttribute="trailing" id="6dn-dm-LAU"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AUr-eD-Jxh" secondAttribute="trailing" id="6dn-dm-LAU"/>
                                     <constraint firstAttribute="trailing" secondItem="mRG-dM-8jq" secondAttribute="trailing" constant="29" id="KQM-wd-GXL"/>
                                     <constraint firstItem="AUr-eD-Jxh" firstAttribute="centerY" secondItem="bXH-Ph-HuI" secondAttribute="centerY" id="LD0-gz-whH"/>
                                     <constraint firstItem="AUr-eD-Jxh" firstAttribute="centerX" secondItem="bXH-Ph-HuI" secondAttribute="centerX" id="SFd-a1-hZ4"/>
-                                    <constraint firstItem="AUr-eD-Jxh" firstAttribute="leading" secondItem="bXH-Ph-HuI" secondAttribute="leading" id="vo0-Qm-ubc"/>
+                                    <constraint firstItem="AUr-eD-Jxh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bXH-Ph-HuI" secondAttribute="leading" id="vo0-Qm-ubc"/>
                                     <constraint firstItem="mRG-dM-8jq" firstAttribute="top" secondItem="bXH-Ph-HuI" secondAttribute="top" constant="29" id="x8P-gb-bec"/>
                                 </constraints>
                             </view>
