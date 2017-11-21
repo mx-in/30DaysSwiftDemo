@@ -1377,6 +1377,7 @@
         <image name="Camera" width="24" height="21"/>
         <image name="Chat" width="100" height="100"/>
         <image name="GPS" width="24" height="25"/>
+        <image name="Hyperspace" width="621" height="1104"/>
         <image name="Link" width="100" height="100"/>
         <image name="Paper" width="18" height="24"/>
         <image name="Photo" width="100" height="100"/>
