@@ -825,8 +825,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRG-dM-8jq">
                                         <rect key="frame" x="307" y="29" width="39" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="MOS-Dx-mgF"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="Ys3-K4-F7p"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="20Z-9f-U3f"/>
+                                            <constraint firstAttribute="height" constant="30" id="DOc-56-Ke0"/>
                                         </constraints>
                                         <state key="normal" title="Reset">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -839,11 +839,11 @@
                                 <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AUr-eD-Jxh" secondAttribute="trailing" id="6dn-dm-LAU"/>
-                                    <constraint firstAttribute="trailing" secondItem="mRG-dM-8jq" secondAttribute="trailing" constant="29" id="KQM-wd-GXL"/>
+                                    <constraint firstAttribute="trailing" secondItem="mRG-dM-8jq" secondAttribute="trailing" constant="29" id="Ftm-xb-iFn"/>
                                     <constraint firstItem="AUr-eD-Jxh" firstAttribute="centerY" secondItem="bXH-Ph-HuI" secondAttribute="centerY" id="LD0-gz-whH"/>
+                                    <constraint firstItem="mRG-dM-8jq" firstAttribute="top" secondItem="bXH-Ph-HuI" secondAttribute="top" constant="29" id="MNu-Ww-W60"/>
                                     <constraint firstItem="AUr-eD-Jxh" firstAttribute="centerX" secondItem="bXH-Ph-HuI" secondAttribute="centerX" id="SFd-a1-hZ4"/>
                                     <constraint firstItem="AUr-eD-Jxh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bXH-Ph-HuI" secondAttribute="leading" id="vo0-Qm-ubc"/>
-                                    <constraint firstItem="mRG-dM-8jq" firstAttribute="top" secondItem="bXH-Ph-HuI" secondAttribute="top" constant="29" id="x8P-gb-bec"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9e-tm-4Uw">
@@ -887,7 +887,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15P-Yf-bAz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4900" y="753"/>
+            <point key="canvasLocation" x="-4900.5" y="752.5"/>
         </scene>
         <!--CarouseE View Controller-->
         <scene sceneID="Pk8-ib-Huh">
