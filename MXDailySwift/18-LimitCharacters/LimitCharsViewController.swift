@@ -41,7 +41,7 @@ class LimitCharsViewController: UIViewController {
         textView.endEditing(true)
     }
     
-    func keyboardWillShow(notification: NSNotification) {
+    @objc func keyboardWillShow(notification: NSNotification) {
         let keyboardInfo = self.keyboardInfo(from: notification)
         let userInfo = notification.userInfo
         let animations = makeAnimation(deltaY: -keyboardInfo.height)
@@ -49,7 +49,7 @@ class LimitCharsViewController: UIViewController {
         playBottomAnimations(animations, withDuration: keyboardInfo.duration, withAnimationOptions: animationOptions(from: userInfo!))
     }
 
-    func keyboardWillHide(notification: NSNotification) {
+    @objc func keyboardWillHide(notification: NSNotification) {
         let userInfo = notification.userInfo
         let keyboardInfo = self.keyboardInfo(from: notification)
         let animations = makeAnimation(deltaY: keyboardInfo.height)

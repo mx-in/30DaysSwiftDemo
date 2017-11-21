@@ -58,7 +58,7 @@ class StopViewController: UIViewController {
         pauseBtn.isEnabled = true
     }
     
-    func updateTimer(){
+    @objc func updateTimer(){
         counter += 0.1
         timeLabel.text = String(format: "%.1f", counter)
     }

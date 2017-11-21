@@ -64,11 +64,11 @@ fileprivate let moviePlayer = AVPlayerViewController()
         didSet {
             switch fillMode {
             case .resize:
-                moviePlayer.videoGravity = AVLayerVideoGravityResizeAspect
+                moviePlayer.videoGravity = AVLayerVideoGravity.resizeAspect.rawValue
             case .resizeAspectFill:
                 moviePlayer.videoGravity = AVVideoScalingModeResizeAspectFill
             case .resizeAspect:
-                moviePlayer.videoGravity = AVLayerVideoGravityResizeAspect
+                moviePlayer.videoGravity = AVLayerVideoGravity.resizeAspect.rawValue
             }
         }
     }
@@ -96,7 +96,7 @@ fileprivate let moviePlayer = AVPlayerViewController()
         }
     }
     
-    func playerItemDidReachEnd() {
+    @objc func playerItemDidReachEnd() {
         moviePlayer.player?.seek(to: kCMTimeZero)
         moviePlayer.player?.play()
     }

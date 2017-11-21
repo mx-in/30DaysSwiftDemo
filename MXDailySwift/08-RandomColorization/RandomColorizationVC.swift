@@ -57,7 +57,7 @@ class RandomColorizationVC: UIViewController {
         
     }
     
-    func randomColor() {
+    @objc func randomColor() {
         let redValue = CGFloat(drand48())
         let greenValue = CGFloat(drand48())
         let blueVaule = CGFloat(drand48())

@@ -50,7 +50,7 @@ class ImageScrollerEffectVC: UIViewController, UIScrollViewDelegate {
         setImageCenter()
     }
     
-    func zoomToMin() {
+    @objc func zoomToMin() {
         UIView.animate(withDuration: 0.3, animations: {
             self.scrollView.zoomScale = self.scrollView.minimumZoomScale
             self.setImageCenter()

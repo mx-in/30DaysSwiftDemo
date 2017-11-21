@@ -34,7 +34,7 @@ class PullToRefreshViewController: UIViewController, UITableViewDataSource {
         self.refreshControl.addTarget(self, action: #selector(PullToRefreshViewController.didReloadEmoji), for: .valueChanged)
         self.refreshControl.backgroundColor = UIColor(red:0.113, green:0.113, blue:0.145, alpha:1)
         
-        let attribute = [NSForegroundColorAttributeName : UIColor.white]
+        let attribute = [NSAttributedStringKey.foregroundColor : UIColor.white]
         refreshControl.attributedTitle = NSAttributedString(string: "Last Updated on \(Date())", attributes: attribute)
         refreshControl.tintColor = UIColor.white
         
@@ -51,7 +51,7 @@ class PullToRefreshViewController: UIViewController, UITableViewDataSource {
         self.view.addSubview(emojiTableView!)
     }
     
-    func didReloadEmoji() {
+    @objc func didReloadEmoji() {
         emojiData = newFavoriteEmoji
         tableViewController.tableView.reloadData()
         refreshControl.endRefreshing()
