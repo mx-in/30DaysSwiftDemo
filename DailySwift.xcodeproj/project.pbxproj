@@ -152,12 +152,12 @@
 			name = "13-AnimateTableViewCell";
 			sourceTree = "<group>";
 		};
-		467458F11EE1233200026CC7 /* 14-EmojiMachine */ = {
+		467458F11EE1233200026CC7 /* 14-EmojiSlotMachine */ = {
 			isa = PBXGroup;
 			children = (
 				467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */,
 			);
-			name = "14-EmojiMachine";
+			name = "14-EmojiSlotMachine";
 			sourceTree = "<group>";
 		};
 		46834DED1EEEE44B00CF0579 /* 16-SlideMenu */ = {
@@ -283,7 +283,7 @@
 				46D410E11EDDB5B500047C5A /* 11-ClearTableViewCell */,
 				467458E51EDF104F00026CC7 /* 12-LoginAnimation */,
 				467458EA1EDFA5E700026CC7 /* 13-AnimateTableViewCell */,
-				467458F11EE1233200026CC7 /* 14-EmojiMachine */,
+				467458F11EE1233200026CC7 /* 14-EmojiSlotMachine */,
 				46EB83C61EE1C3D200FE8336 /* 15- AnimatedSplash */,
 				46834DED1EEEE44B00CF0579 /* 16-SlideMenu */,
 				469561491FBC614F00E60233 /* 17-TumblrMenu */,
