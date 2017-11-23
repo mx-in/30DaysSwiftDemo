@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46053D7A1FC4817A006079D5 /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46053D781FC4817A006079D5 /* RefreshContents.xib */; };
+		46053D7B1FC4817A006079D5 /* CPRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46053D791FC4817A006079D5 /* CPRefreshViewController.swift */; };
 		4619695B1EF2A15F00029FE4 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619695A1EF2A15F00029FE4 /* MenuTableViewController.swift */; };
 		4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619695C1EF2A1B900029FE4 /* MenuTransitionManager.swift */; };
 		462854A81EF3BD4800DD46D0 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462854A71EF3BD4800DD46D0 /* MenuTableViewCell.swift */; };
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46053D781FC4817A006079D5 /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RefreshContents.xib; path = "19-CustomPullToRefresh/RefreshContents.xib"; sourceTree = "<group>"; };
+		46053D791FC4817A006079D5 /* CPRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPRefreshViewController.swift; path = "19-CustomPullToRefresh/CPRefreshViewController.swift"; sourceTree = "<group>"; };
 		4619695A1EF2A15F00029FE4 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = "16-SlideMenu/MenuTableViewController.swift"; sourceTree = "<group>"; };
 		4619695C1EF2A1B900029FE4 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTransitionManager.swift; path = "16-SlideMenu/MenuTransitionManager.swift"; sourceTree = "<group>"; };
 		462854A71EF3BD4800DD46D0 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = "16-SlideMenu/MenuTableViewCell.swift"; sourceTree = "<group>"; };
@@ -134,6 +138,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46053D731FC47C8C006079D5 /* 19-CustomPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				46053D791FC4817A006079D5 /* CPRefreshViewController.swift */,
+				46053D781FC4817A006079D5 /* RefreshContents.xib */,
+			);
+			name = "19-CustomPullToRefresh";
+			sourceTree = "<group>";
+		};
 		467458E51EDF104F00026CC7 /* 12-LoginAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +301,7 @@
 				46834DED1EEEE44B00CF0579 /* 16-SlideMenu */,
 				469561491FBC614F00E60233 /* 17-TumblrMenu */,
 				46D1873B1FC2DC2300E7B8DA /* 18-LimitCharacters */,
+				46053D731FC47C8C006079D5 /* 19-CustomPullToRefresh */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F051711E043990006930F5 /* Info.plist */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
@@ -462,6 +476,7 @@
 				46F051701E043990006930F5 /* LaunchScreen.storyboard in Resources */,
 				46F051A71E059616006930F5 /* Ecstasy.mp3 in Resources */,
 				46F0516B1E043990006930F5 /* Main.storyboard in Resources */,
+				46053D7A1FC4817A006079D5 /* RefreshContents.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +524,7 @@
 				46F051F11E06DEC6006930F5 /* VideoBackgroundVC.swift in Sources */,
 				46F0519F1E0452A6006930F5 /* CarouseEViewController.swift in Sources */,
 				467458E91EDF15FE00026CC7 /* LoginViewController.swift in Sources */,
+				46053D7B1FC4817A006079D5 /* CPRefreshViewController.swift in Sources */,
 				46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */,
 				46F051661E043990006930F5 /* AppDelegate.swift in Sources */,
 				4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */,
