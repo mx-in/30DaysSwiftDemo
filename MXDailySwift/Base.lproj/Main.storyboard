@@ -61,6 +61,7 @@
                         <segue destination="cpJ-ix-dco" kind="show" identifier="LimitCharacter" id="4ra-mc-dMl"/>
                         <segue destination="9gh-50-pBN" kind="show" identifier="CustomPullToRefresh" id="z8l-79-vGf"/>
                         <segue destination="oGU-hs-kH4" kind="show" identifier="CollectionViewAnimation" id="YFI-NS-K09"/>
+                        <segue destination="Gmg-Ql-EMT" kind="show" identifier="SwipeableCell" id="60l-m6-e05"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaV-Uu-EJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -662,6 +663,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JrW-rl-eyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1850" y="-755"/>
+        </scene>
+        <!--Swipeable Cell-->
+        <scene sceneID="ihI-ix-P3w">
+            <objects>
+                <tableViewController title="Swipeable Cell" id="Gmg-Ql-EMT" customClass="SwipeableTableViewController" customModule="DailySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pxg-nA-9Og">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PatternCell" rowHeight="60" id="YTw-qu-E3U" customClass="PatternCell" customModule="DailySwift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YTw-qu-E3U" id="PsQ-Fz-grE">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jhb-fY-0MN">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="e4w-Ya-isy"/>
+                                                <constraint firstAttribute="height" constant="60" id="nvD-RQ-kiY"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neon Autumn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAk-aD-0wo">
+                                            <rect key="frame" x="158" y="18" width="207" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="kbJ-Nv-Ppu"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="RAk-aD-0wo" secondAttribute="trailing" constant="10" id="A6d-Ev-XFE"/>
+                                        <constraint firstItem="jhb-fY-0MN" firstAttribute="centerY" secondItem="PsQ-Fz-grE" secondAttribute="centerY" id="CLE-QE-NJZ"/>
+                                        <constraint firstItem="RAk-aD-0wo" firstAttribute="centerY" secondItem="jhb-fY-0MN" secondAttribute="centerY" id="PUI-gK-JDP"/>
+                                        <constraint firstItem="RAk-aD-0wo" firstAttribute="leading" secondItem="jhb-fY-0MN" secondAttribute="trailing" constant="8" id="RZw-gW-AAU"/>
+                                        <constraint firstAttribute="bottom" secondItem="jhb-fY-0MN" secondAttribute="bottom" id="Tqn-pw-Zei"/>
+                                        <constraint firstAttribute="bottom" secondItem="jhb-fY-0MN" secondAttribute="bottom" id="YXJ-04-lt8"/>
+                                        <constraint firstItem="jhb-fY-0MN" firstAttribute="leading" secondItem="PsQ-Fz-grE" secondAttribute="leading" id="grW-nE-BvR"/>
+                                        <constraint firstItem="jhb-fY-0MN" firstAttribute="top" secondItem="PsQ-Fz-grE" secondAttribute="top" id="ufv-sq-WGz"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="patternImageView" destination="jhb-fY-0MN" id="bQH-sw-8dI"/>
+                                    <outlet property="patternNameLabel" destination="RAk-aD-0wo" id="QF5-4P-y3t"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gmg-Ql-EMT" id="FIx-lV-PAq"/>
+                            <outlet property="delegate" destination="Gmg-Ql-EMT" id="lSx-sI-QgY"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYt-eu-4GE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1071.2" y="-755.17241379310349"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="vDX-yh-S1K">

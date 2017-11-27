@@ -8,17 +8,22 @@
 
 import UIKit
 
+struct Pattern {
+    let image: String
+    let name: String
+}
+
 class PatternCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var patternImageView: UIImageView!
+    @IBOutlet weak var patternNameLabel: UILabel!
+    
+    func prepareCell(_ pattern: Pattern?) {
+        guard let ptn = pattern else {
+            return
+        }
+        patternImageView.image = UIImage(named: ptn.image)
+        patternNameLabel.text = ptn.name
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }

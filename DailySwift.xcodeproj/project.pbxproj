@@ -22,6 +22,8 @@
 		467458F01EE0FDE100026CC7 /* EmojiMachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */; };
 		467604031FCC4762005FD155 /* AnimationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467604011FCC4762005FD155 /* AnimationCollectionViewCell.swift */; };
 		467604041FCC4762005FD155 /* AnimationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467604021FCC4762005FD155 /* AnimationCollectionViewCell.xib */; };
+		467604081FCC51B7005FD155 /* SwipeableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467604071FCC51B7005FD155 /* SwipeableTableViewController.swift */; };
+		4676040A1FCC51F8005FD155 /* PatternCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467604091FCC51F8005FD155 /* PatternCell.swift */; };
 		46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */; };
 		46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */; };
 		468D9F4F1FB99BB4008DC057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FBEFD61EF3B8D60053F9BA /* Assets.xcassets */; };
@@ -86,6 +88,8 @@
 		467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojiMachineViewController.swift; path = "14-EmojiMachine/EmojiMachineViewController.swift"; sourceTree = "<group>"; };
 		467604011FCC4762005FD155 /* AnimationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationCollectionViewCell.swift; path = "20-CollectionViewAnimation/AnimationCollectionViewCell.swift"; sourceTree = "<group>"; };
 		467604021FCC4762005FD155 /* AnimationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AnimationCollectionViewCell.xib; path = "20-CollectionViewAnimation/AnimationCollectionViewCell.xib"; sourceTree = "<group>"; };
+		467604071FCC51B7005FD155 /* SwipeableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableTableViewController.swift; sourceTree = "<group>"; };
+		467604091FCC51F8005FD155 /* PatternCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternCell.swift; sourceTree = "<group>"; };
 		46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewController.swift; path = "16-SlideMenu/NewsTableViewController.swift"; sourceTree = "<group>"; };
 		46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = "16-SlideMenu/NewsTableViewCell.swift"; sourceTree = "<group>"; };
 		4695614E1FBC683100E60233 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "17-TumblrMenu/MainViewController.swift"; sourceTree = "<group>"; };
@@ -193,6 +197,15 @@
 				467458EF1EE0FDE100026CC7 /* EmojiMachineViewController.swift */,
 			);
 			name = "14-EmojiSlotMachine";
+			sourceTree = "<group>";
+		};
+		467604061FCC517F005FD155 /* 21-SwipeableCell */ = {
+			isa = PBXGroup;
+			children = (
+				467604071FCC51B7005FD155 /* SwipeableTableViewController.swift */,
+				467604091FCC51F8005FD155 /* PatternCell.swift */,
+			);
+			path = "21-SwipeableCell";
 			sourceTree = "<group>";
 		};
 		46834DED1EEEE44B00CF0579 /* 16-SlideMenu */ = {
@@ -325,6 +338,7 @@
 				46D1873B1FC2DC2300E7B8DA /* 18-LimitCharacters */,
 				46053D731FC47C8C006079D5 /* 19-CustomPullToRefresh */,
 				464791081FC94274001F6494 /* 20-CollectionViewAnimation */,
+				467604061FCC517F005FD155 /* 21-SwipeableCell */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F051711E043990006930F5 /* Info.plist */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
@@ -547,6 +561,7 @@
 				46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */,
 				46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */,
 				46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */,
+				4676040A1FCC51F8005FD155 /* PatternCell.swift in Sources */,
 				467458EC1EDFE73600026CC7 /* FirstTableViewController.swift in Sources */,
 				467458E71EDF15E000026CC7 /* SignUpViewController.swift in Sources */,
 				46F051F11E06DEC6006930F5 /* VideoBackgroundVC.swift in Sources */,
@@ -556,6 +571,7 @@
 				46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */,
 				46F051661E043990006930F5 /* AppDelegate.swift in Sources */,
 				4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */,
+				467604081FCC51B7005FD155 /* SwipeableTableViewController.swift in Sources */,
 				46F051EF1E0660A6006930F5 /* ImageScrollerEffectVC.swift in Sources */,
 				46EB83C81EE1D91D00FE8336 /* SplashAnimation.swift in Sources */,
 				462854A81EF3BD4800DD46D0 /* MenuTableViewCell.swift in Sources */,

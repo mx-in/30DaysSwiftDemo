@@ -9,87 +9,73 @@
 import UIKit
 
 class SwipeableTableViewController: UITableViewController {
-
+    
+    fileprivate var data = [
+        Pattern(image: "21-1", name: "Pattern Building"),
+        Pattern(image: "21-2", name: "Joe Beez"),
+        Pattern(image: "21-3", name: "Car It's car"),
+        Pattern(image: "21-4", name: "Floral Kaleidoscopic"),
+        Pattern(image: "21-5", name: "Sprinkle Pattern"),
+        Pattern(image: "21-6", name: "Palitos de queso"),
+        Pattern(image: "21-7", name: "Ready to Go? Pattern"),
+        Pattern(image: "21-8", name: "Sets Seamless"),
+        ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
+    
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 4
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return data.count
     }
+    
+    
+     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PatternCell.self), for: indexPath) as? PatternCell
+        
+        guard let patternCell = cell else {
+            return UITableViewCell()
+        }
+        
+        let pattern = data[indexPath.row]
+        patternCell.prepareCell(pattern)
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
+        return patternCell
+     }
+    
+    // MARK: - Table view Delegate
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let delete = UITableViewRowAction(style: .normal, title: "🗑\nDelete", handler: { action, index in
+            print("delete button tapped")
+        })
+        
+        let share = UITableViewRowAction(style: .normal, title: "🤗\nShare", handler: { (action: UITableViewRowAction, indexPath: IndexPath) in
+            
+            let firstActiveItem = self.data[indexPath.row]
+            let activeViewController =  UIActivityViewController(activityItems: [firstActiveItem.image as NSString], applicationActivities: nil)
+            self.present(activeViewController, animated: true, completion: nil)
+            })
+        share.backgroundColor = .red
+        
+        let download = UITableViewRowAction(style: .normal, title: "⬇️\nDownload", handler: { (action, index) in
+                print("download button tapped")
+            })
+        download.backgroundColor = .blue
+        
+        return [delete, share, download]
+        
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
