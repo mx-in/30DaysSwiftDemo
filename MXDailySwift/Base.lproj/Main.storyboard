@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9gh-50-pBN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="26P-iU-juw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -60,6 +60,7 @@
                         <segue destination="XdX-b9-R8R" kind="show" identifier="TumblrMenu" id="fSf-Ia-jky"/>
                         <segue destination="cpJ-ix-dco" kind="show" identifier="LimitCharacter" id="4ra-mc-dMl"/>
                         <segue destination="9gh-50-pBN" kind="show" identifier="CustomPullToRefresh" id="z8l-79-vGf"/>
+                        <segue destination="oGU-hs-kH4" kind="show" identifier="CollectionViewAnimation" id="YFI-NS-K09"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaV-Uu-EJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -275,7 +276,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IpV-XT-tpn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="09n-rx-TqA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="-1527"/>
+            <point key="canvasLocation" x="-4902" y="-1444"/>
         </scene>
         <!--News-->
         <scene sceneID="AlS-dz-T4W">
@@ -373,7 +374,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtM-tv-mEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="-846"/>
+            <point key="canvasLocation" x="-4902" y="-760"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="PWL-fw-5hx">
@@ -457,7 +458,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vhe-dk-ky1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550" y="-846"/>
+            <point key="canvasLocation" x="-4174" y="-760"/>
         </scene>
         <!--Limit Chars View Controller-->
         <scene sceneID="Vkk-49-VEl">
@@ -583,7 +584,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0IO-B4-TDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399" y="-846"/>
+            <point key="canvasLocation" x="-3394" y="-760"/>
         </scene>
         <!--Refresh View Controller-->
         <scene sceneID="5fr-UK-LHx">
@@ -635,7 +636,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpB-6K-vcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1397.5999999999999" y="-159.67016491754123"/>
+            <point key="canvasLocation" x="-2626" y="-760"/>
+        </scene>
+        <!--Collect Animate View Controller-->
+        <scene sceneID="64U-1H-4dX">
+            <objects>
+                <collectionViewController id="oGU-hs-kH4" customClass="CollectAnimateViewController" customModule="DailySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="UMr-Jt-Mp1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IqZ-X2-Izi">
+                            <size key="itemSize" width="340" height="210"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="oGU-hs-kH4" id="l7R-TV-Fjq"/>
+                            <outlet property="delegate" destination="oGU-hs-kH4" id="n69-4w-ypv"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JrW-rl-eyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1850" y="-755"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="vDX-yh-S1K">
@@ -833,7 +859,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2h-L9-FS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="40N-Td-MzS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="550" y="-1528"/>
+            <point key="canvasLocation" x="-4174" y="-1445"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rGW-er-guC">
