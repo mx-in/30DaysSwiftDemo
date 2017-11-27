@@ -41,8 +41,6 @@ class CPRefreshViewController: UIViewController {
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.addSubview(refreshControl)
-
-        self.navigationController?.isNavigationBarHidden = true
         
         loadCustomRefreshContents()
     }
