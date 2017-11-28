@@ -16,9 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var imageView: UIImageView?
     var splashAnimation: SplashAnimation?
 
-
+    var quickActionHandler = QuickActionHandler()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+        if let shortcutItem = launchOptions?[.shortcutItem] as? UIApplicationShortcutItem {
+            quickActionHandler.launchedShortcutItem = shortcutItem
+        }
         
 //        let showAnimation = true // let it be true if you want to show animation splash
         
@@ -42,6 +45,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.isStatusBarHidden = true
         
         return true
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        if let shortcut = quickActionHandler.launchedShortcutItem {
+            _ = quickActionHandler.handleShortcutItem(shortcut)
+            quickActionHandler.launchedShortcutItem = nil
+        }
+    }
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        let isHandled = quickActionHandler.handleShortcutItem(shortcutItem)
+        completionHandler(isHandled)
     }
 }
 

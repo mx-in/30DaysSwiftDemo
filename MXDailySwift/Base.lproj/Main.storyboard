@@ -459,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vhe-dk-ky1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4174" y="-760"/>
+            <point key="canvasLocation" x="-4175" y="-755"/>
         </scene>
         <!--Limit Chars View Controller-->
         <scene sceneID="Vkk-49-VEl">
@@ -921,6 +921,35 @@
                 <exit id="40N-Td-MzS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-4174" y="-1445"/>
+        </scene>
+        <!--Scan View Controller-->
+        <scene sceneID="NJp-Wn-xNp">
+            <objects>
+                <viewController storyboardIdentifier="ScanVC" id="A1G-8U-Pkt" customClass="ScanViewController" customModule="DailySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2gn-wf-ta1"/>
+                        <viewControllerLayoutGuide type="bottom" id="ggL-8A-i0L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w9f-6E-zi8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wechat" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-sx-BgU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ggL-8A-i0L" firstAttribute="top" secondItem="Jej-sx-BgU" secondAttribute="bottom" id="2he-JR-Zx8"/>
+                            <constraint firstAttribute="trailing" secondItem="Jej-sx-BgU" secondAttribute="trailing" id="Do7-5v-pHj"/>
+                            <constraint firstItem="Jej-sx-BgU" firstAttribute="top" secondItem="w9f-6E-zi8" secondAttribute="top" id="nyJ-68-uis"/>
+                            <constraint firstItem="Jej-sx-BgU" firstAttribute="leading" secondItem="w9f-6E-zi8" secondAttribute="leading" id="pOb-IV-EQQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ane-JZ-sGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4175" y="-36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rGW-er-guC">
@@ -1508,6 +1537,64 @@
             </objects>
             <point key="canvasLocation" x="945" y="1404"/>
         </scene>
+        <!--Run View Controller-->
+        <scene sceneID="JQD-yc-kXv">
+            <objects>
+                <viewController storyboardIdentifier="RunVC" id="mP7-U0-Qga" customClass="RunViewController" customModule="DailySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7YZ-3b-TGO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sx8-88-TeS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AJE-JO-ZHR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nikeplus" translatesAutoresizingMaskIntoConstraints="NO" id="304-8E-jP2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="304-8E-jP2" secondAttribute="trailing" id="a8F-eo-OAn"/>
+                            <constraint firstItem="Sx8-88-TeS" firstAttribute="top" secondItem="304-8E-jP2" secondAttribute="bottom" id="mcq-MP-f0L"/>
+                            <constraint firstItem="304-8E-jP2" firstAttribute="top" secondItem="AJE-JO-ZHR" secondAttribute="top" id="nXK-6a-NuR"/>
+                            <constraint firstItem="304-8E-jP2" firstAttribute="leading" secondItem="AJE-JO-ZHR" secondAttribute="leading" id="yqQ-2S-vfm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ze1-US-EJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4903" y="-36"/>
+        </scene>
+        <!--SwitchWIFI View Controller-->
+        <scene sceneID="Z3Z-dg-H3N">
+            <objects>
+                <viewController storyboardIdentifier="WiFiVC" id="9Fk-6M-zax" customClass="SwitchWIFIViewController" customModule="DailySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9eR-EV-uRQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="efW-9T-vdp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2g2-zX-654">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setting" translatesAutoresizingMaskIntoConstraints="NO" id="d8I-Uf-39c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="efW-9T-vdp" firstAttribute="top" secondItem="d8I-Uf-39c" secondAttribute="bottom" id="1Un-AG-lMD"/>
+                            <constraint firstItem="d8I-Uf-39c" firstAttribute="leading" secondItem="2g2-zX-654" secondAttribute="leading" id="27c-Iq-6rT"/>
+                            <constraint firstAttribute="trailing" secondItem="d8I-Uf-39c" secondAttribute="trailing" id="IiV-Oq-Mfh"/>
+                            <constraint firstItem="d8I-Uf-39c" firstAttribute="top" secondItem="2g2-zX-654" secondAttribute="top" id="T5A-gK-5tt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5BG-Tn-KDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3394" y="-36"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1-t" width="707" height="239"/>
@@ -1533,10 +1620,13 @@
         <image name="mengto" width="200" height="200"/>
         <image name="music play" width="148" height="148"/>
         <image name="newPost" width="48" height="34"/>
+        <image name="nikeplus" width="375" height="667"/>
         <image name="pause" width="42" height="56"/>
         <image name="play" width="48" height="61"/>
+        <image name="setting" width="375" height="667"/>
         <image name="steve" width="320" height="320"/>
         <image name="toolbar" width="375" height="50"/>
+        <image name="wechat" width="375" height="667"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

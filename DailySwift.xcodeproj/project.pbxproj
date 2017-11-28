@@ -12,6 +12,7 @@
 		4619695B1EF2A15F00029FE4 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619695A1EF2A15F00029FE4 /* MenuTableViewController.swift */; };
 		4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619695C1EF2A1B900029FE4 /* MenuTransitionManager.swift */; };
 		462854A81EF3BD4800DD46D0 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462854A71EF3BD4800DD46D0 /* MenuTableViewCell.swift */; };
+		462B4DF21FCDC1F600E81FF5 /* QuickActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462B4DF11FCDC1F600E81FF5 /* QuickActionViewController.swift */; };
 		4647910A1FC942BA001F6494 /* CollectAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464791091FC942BA001F6494 /* CollectAnimateViewController.swift */; };
 		464791101FC9486D001F6494 /* AnimationImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4647910F1FC9486D001F6494 /* AnimationImageCollection.swift */; };
 		464791121FC948E8001F6494 /* AnimationCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464791111FC948E8001F6494 /* AnimationCellModel.swift */; };
@@ -24,8 +25,12 @@
 		467604041FCC4762005FD155 /* AnimationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467604021FCC4762005FD155 /* AnimationCollectionViewCell.xib */; };
 		467604081FCC51B7005FD155 /* SwipeableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467604071FCC51B7005FD155 /* SwipeableTableViewController.swift */; };
 		4676040A1FCC51F8005FD155 /* PatternCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467604091FCC51F8005FD155 /* PatternCell.swift */; };
+		4676040F1FCD866C005FD155 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676040E1FCD8669005FD155 /* RunViewController.swift */; };
+		467604111FCD8687005FD155 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467604101FCD8687005FD155 /* ScanViewController.swift */; };
+		467604131FCD8694005FD155 /* SwitchWIFIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467604121FCD8694005FD155 /* SwitchWIFIViewController.swift */; };
 		46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */; };
 		46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */; };
+		468CF4CD1FCD8AE700F29EEA /* QuickActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CF4CC1FCD8AE700F29EEA /* QuickActionHandler.swift */; };
 		468D9F4F1FB99BB4008DC057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FBEFD61EF3B8D60053F9BA /* Assets.xcassets */; };
 		469561501FBC683100E60233 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695614E1FBC683100E60233 /* MainViewController.swift */; };
 		469561511FBC683100E60233 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695614F1FBC683100E60233 /* MenuViewController.swift */; };
@@ -78,6 +83,7 @@
 		4619695A1EF2A15F00029FE4 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = "16-SlideMenu/MenuTableViewController.swift"; sourceTree = "<group>"; };
 		4619695C1EF2A1B900029FE4 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTransitionManager.swift; path = "16-SlideMenu/MenuTransitionManager.swift"; sourceTree = "<group>"; };
 		462854A71EF3BD4800DD46D0 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = "16-SlideMenu/MenuTableViewCell.swift"; sourceTree = "<group>"; };
+		462B4DF11FCDC1F600E81FF5 /* QuickActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionViewController.swift; sourceTree = "<group>"; };
 		464791091FC942BA001F6494 /* CollectAnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectAnimateViewController.swift; path = "20-CollectionViewAnimation/CollectAnimateViewController.swift"; sourceTree = "<group>"; };
 		4647910F1FC9486D001F6494 /* AnimationImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationImageCollection.swift; path = "20-CollectionViewAnimation/AnimationImageCollection.swift"; sourceTree = "<group>"; };
 		464791111FC948E8001F6494 /* AnimationCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationCellModel.swift; path = "20-CollectionViewAnimation/AnimationCellModel.swift"; sourceTree = "<group>"; };
@@ -90,8 +96,12 @@
 		467604021FCC4762005FD155 /* AnimationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AnimationCollectionViewCell.xib; path = "20-CollectionViewAnimation/AnimationCollectionViewCell.xib"; sourceTree = "<group>"; };
 		467604071FCC51B7005FD155 /* SwipeableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableTableViewController.swift; sourceTree = "<group>"; };
 		467604091FCC51F8005FD155 /* PatternCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternCell.swift; sourceTree = "<group>"; };
+		4676040E1FCD8669005FD155 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		467604101FCD8687005FD155 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		467604121FCD8694005FD155 /* SwitchWIFIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchWIFIViewController.swift; sourceTree = "<group>"; };
 		46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewController.swift; path = "16-SlideMenu/NewsTableViewController.swift"; sourceTree = "<group>"; };
 		46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = "16-SlideMenu/NewsTableViewCell.swift"; sourceTree = "<group>"; };
+		468CF4CC1FCD8AE700F29EEA /* QuickActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionHandler.swift; sourceTree = "<group>"; };
 		4695614E1FBC683100E60233 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "17-TumblrMenu/MainViewController.swift"; sourceTree = "<group>"; };
 		4695614F1FBC683100E60233 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "17-TumblrMenu/MenuViewController.swift"; sourceTree = "<group>"; };
 		469561521FBC685500E60233 /* TumblrMenuTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TumblrMenuTransitionManager.swift; path = "17-TumblrMenu/TumblrMenuTransitionManager.swift"; sourceTree = "<group>"; };
@@ -206,6 +216,18 @@
 				467604091FCC51F8005FD155 /* PatternCell.swift */,
 			);
 			path = "21-SwipeableCell";
+			sourceTree = "<group>";
+		};
+		4676040D1FCD084E005FD155 /* 22-3DTouchQuickAction */ = {
+			isa = PBXGroup;
+			children = (
+				468CF4CC1FCD8AE700F29EEA /* QuickActionHandler.swift */,
+				462B4DF11FCDC1F600E81FF5 /* QuickActionViewController.swift */,
+				4676040E1FCD8669005FD155 /* RunViewController.swift */,
+				467604101FCD8687005FD155 /* ScanViewController.swift */,
+				467604121FCD8694005FD155 /* SwitchWIFIViewController.swift */,
+			);
+			path = "22-3DTouchQuickAction";
 			sourceTree = "<group>";
 		};
 		46834DED1EEEE44B00CF0579 /* 16-SlideMenu */ = {
@@ -339,6 +361,7 @@
 				46053D731FC47C8C006079D5 /* 19-CustomPullToRefresh */,
 				464791081FC94274001F6494 /* 20-CollectionViewAnimation */,
 				467604061FCC517F005FD155 /* 21-SwipeableCell */,
+				4676040D1FCD084E005FD155 /* 22-3DTouchQuickAction */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F051711E043990006930F5 /* Info.plist */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
@@ -545,6 +568,7 @@
 				464791101FC9486D001F6494 /* AnimationImageCollection.swift in Sources */,
 				4619695B1EF2A15F00029FE4 /* MenuTableViewController.swift in Sources */,
 				46F051941E044035006930F5 /* PullToRefreshViewController.swift in Sources */,
+				467604131FCD8694005FD155 /* SwitchWIFIViewController.swift in Sources */,
 				467604031FCC4762005FD155 /* AnimationCollectionViewCell.swift in Sources */,
 				46F0519E1E0452A6006930F5 /* funnyCell.swift in Sources */,
 				469561531FBC685500E60233 /* TumblrMenuTransitionManager.swift in Sources */,
@@ -558,7 +582,9 @@
 				46F051A91E059901006930F5 /* RandomColorizationVC.swift in Sources */,
 				46F0519D1E0452A6006930F5 /* funny.swift in Sources */,
 				467458EE1EDFE75B00026CC7 /* SecondTableViewController.swift in Sources */,
+				467604111FCD8687005FD155 /* ScanViewController.swift in Sources */,
 				46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */,
+				4676040F1FCD866C005FD155 /* RunViewController.swift in Sources */,
 				46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */,
 				46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */,
 				4676040A1FCC51F8005FD155 /* PatternCell.swift in Sources */,
@@ -572,9 +598,11 @@
 				46F051661E043990006930F5 /* AppDelegate.swift in Sources */,
 				4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */,
 				467604081FCC51B7005FD155 /* SwipeableTableViewController.swift in Sources */,
+				468CF4CD1FCD8AE700F29EEA /* QuickActionHandler.swift in Sources */,
 				46F051EF1E0660A6006930F5 /* ImageScrollerEffectVC.swift in Sources */,
 				46EB83C81EE1D91D00FE8336 /* SplashAnimation.swift in Sources */,
 				462854A81EF3BD4800DD46D0 /* MenuTableViewCell.swift in Sources */,
+				462B4DF21FCDC1F600E81FF5 /* QuickActionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
