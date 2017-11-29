@@ -31,6 +31,12 @@
 		46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */; };
 		46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */; };
 		468CF4CD1FCD8AE700F29EEA /* QuickActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CF4CC1FCD8AE700F29EEA /* QuickActionHandler.swift */; };
+		468CF4DB1FCED8F800F29EEA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468CF4DA1FCED8F700F29EEA /* SWRevealViewController.m */; };
+		468CF4DF1FCEDC0E00F29EEA /* RevealAbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CF4DE1FCEDC0E00F29EEA /* RevealAbleViewController.swift */; };
+		468CF4E11FCEDE2E00F29EEA /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CF4E01FCEDE2E00F29EEA /* ChannelViewController.swift */; };
+		468CF4E31FCEDE4700F29EEA /* FriendReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CF4E21FCEDE4700F29EEA /* FriendReadViewController.swift */; };
+		468CF4E51FCEDE6700F29EEA /* ReadLaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CF4E41FCEDE6700F29EEA /* ReadLaterViewController.swift */; };
+		468CF4E71FCEDE8700F29EEA /* BackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CF4E61FCEDE8700F29EEA /* BackTableViewController.swift */; };
 		468D9F4F1FB99BB4008DC057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FBEFD61EF3B8D60053F9BA /* Assets.xcassets */; };
 		469561501FBC683100E60233 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695614E1FBC683100E60233 /* MainViewController.swift */; };
 		469561511FBC683100E60233 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695614F1FBC683100E60233 /* MenuViewController.swift */; };
@@ -102,6 +108,14 @@
 		46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewController.swift; path = "16-SlideMenu/NewsTableViewController.swift"; sourceTree = "<group>"; };
 		46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = "16-SlideMenu/NewsTableViewCell.swift"; sourceTree = "<group>"; };
 		468CF4CC1FCD8AE700F29EEA /* QuickActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionHandler.swift; sourceTree = "<group>"; };
+		468CF4D71FCED8F400F29EEA /* DailySwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DailySwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		468CF4D91FCED8F700F29EEA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		468CF4DA1FCED8F700F29EEA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		468CF4DE1FCEDC0E00F29EEA /* RevealAbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealAbleViewController.swift; sourceTree = "<group>"; };
+		468CF4E01FCEDE2E00F29EEA /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		468CF4E21FCEDE4700F29EEA /* FriendReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendReadViewController.swift; sourceTree = "<group>"; };
+		468CF4E41FCEDE6700F29EEA /* ReadLaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadLaterViewController.swift; sourceTree = "<group>"; };
+		468CF4E61FCEDE8700F29EEA /* BackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTableViewController.swift; sourceTree = "<group>"; };
 		4695614E1FBC683100E60233 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "17-TumblrMenu/MainViewController.swift"; sourceTree = "<group>"; };
 		4695614F1FBC683100E60233 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "17-TumblrMenu/MenuViewController.swift"; sourceTree = "<group>"; };
 		469561521FBC685500E60233 /* TumblrMenuTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TumblrMenuTransitionManager.swift; path = "17-TumblrMenu/TumblrMenuTransitionManager.swift"; sourceTree = "<group>"; };
@@ -242,6 +256,37 @@
 			name = "16-SlideMenu";
 			sourceTree = "<group>";
 		};
+		468CF4D51FCED85400F29EEA /* 23-SlideOutMenu */ = {
+			isa = PBXGroup;
+			children = (
+				468CF4E61FCEDE8700F29EEA /* BackTableViewController.swift */,
+				468CF4DE1FCEDC0E00F29EEA /* RevealAbleViewController.swift */,
+				468CF4E01FCEDE2E00F29EEA /* ChannelViewController.swift */,
+				468CF4E21FCEDE4700F29EEA /* FriendReadViewController.swift */,
+				468CF4E41FCEDE6700F29EEA /* ReadLaterViewController.swift */,
+				468CF4D61FCED86C00F29EEA /* SWReveal */,
+			);
+			path = "23-SlideOutMenu";
+			sourceTree = "<group>";
+		};
+		468CF4D61FCED86C00F29EEA /* SWReveal */ = {
+			isa = PBXGroup;
+			children = (
+				468CF4D91FCED8F700F29EEA /* SWRevealViewController.h */,
+				468CF4DA1FCED8F700F29EEA /* SWRevealViewController.m */,
+			);
+			name = SWReveal;
+			sourceTree = "<group>";
+		};
+		468CF4DD1FCED95400F29EEA /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				468CF4D71FCED8F400F29EEA /* DailySwift-Bridging-Header.h */,
+				46F051711E043990006930F5 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		469561491FBC614F00E60233 /* 17-TumblrMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,9 +407,10 @@
 				464791081FC94274001F6494 /* 20-CollectionViewAnimation */,
 				467604061FCC517F005FD155 /* 21-SwipeableCell */,
 				4676040D1FCD084E005FD155 /* 22-3DTouchQuickAction */,
+				468CF4D51FCED85400F29EEA /* 23-SlideOutMenu */,
 				46F051691E043990006930F5 /* Main.storyboard */,
-				46F051711E043990006930F5 /* Info.plist */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
+				468CF4DD1FCED95400F29EEA /* Support */,
 				46FBEFD61EF3B8D60053F9BA /* Assets.xcassets */,
 				46F051A51E059495006930F5 /* Sources */,
 			);
@@ -563,12 +609,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F051981E044DEF006930F5 /* StopViewController.swift in Sources */,
+				468CF4E71FCEDE8700F29EEA /* BackTableViewController.swift in Sources */,
 				4647910A1FC942BA001F6494 /* CollectAnimateViewController.swift in Sources */,
 				467458F01EE0FDE100026CC7 /* EmojiMachineViewController.swift in Sources */,
 				464791101FC9486D001F6494 /* AnimationImageCollection.swift in Sources */,
 				4619695B1EF2A15F00029FE4 /* MenuTableViewController.swift in Sources */,
 				46F051941E044035006930F5 /* PullToRefreshViewController.swift in Sources */,
 				467604131FCD8694005FD155 /* SwitchWIFIViewController.swift in Sources */,
+				468CF4DF1FCEDC0E00F29EEA /* RevealAbleViewController.swift in Sources */,
 				467604031FCC4762005FD155 /* AnimationCollectionViewCell.swift in Sources */,
 				46F0519E1E0452A6006930F5 /* funnyCell.swift in Sources */,
 				469561531FBC685500E60233 /* TumblrMenuTransitionManager.swift in Sources */,
@@ -579,9 +627,12 @@
 				46D1873D1FC2DE2300E7B8DA /* LimitCharsViewController.swift in Sources */,
 				469561511FBC683100E60233 /* MenuViewController.swift in Sources */,
 				46D410E31EDDB6AE00047C5A /* ClearTableViewController.swift in Sources */,
+				468CF4E11FCEDE2E00F29EEA /* ChannelViewController.swift in Sources */,
+				468CF4E31FCEDE4700F29EEA /* FriendReadViewController.swift in Sources */,
 				46F051A91E059901006930F5 /* RandomColorizationVC.swift in Sources */,
 				46F0519D1E0452A6006930F5 /* funny.swift in Sources */,
 				467458EE1EDFE75B00026CC7 /* SecondTableViewController.swift in Sources */,
+				468CF4E51FCEDE6700F29EEA /* ReadLaterViewController.swift in Sources */,
 				467604111FCD8687005FD155 /* ScanViewController.swift in Sources */,
 				46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */,
 				4676040F1FCD866C005FD155 /* RunViewController.swift in Sources */,
@@ -597,6 +648,7 @@
 				46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */,
 				46F051661E043990006930F5 /* AppDelegate.swift in Sources */,
 				4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */,
+				468CF4DB1FCED8F800F29EEA /* SWRevealViewController.m in Sources */,
 				467604081FCC51B7005FD155 /* SwipeableTableViewController.swift in Sources */,
 				468CF4CD1FCD8AE700F29EEA /* QuickActionHandler.swift in Sources */,
 				46F051EF1E0660A6006930F5 /* ImageScrollerEffectVC.swift in Sources */,
@@ -774,6 +826,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mx-in.MXDailySwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MXDailySwift/DailySwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -791,6 +844,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mx-in.MXDailySwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MXDailySwift/DailySwift-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
