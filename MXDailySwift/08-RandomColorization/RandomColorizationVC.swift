@@ -11,7 +11,7 @@ import AVFoundation
 
 class RandomColorizationVC: UIViewController {
     
-    var audioPlayer = AVAudioPlayer()
+    var audioPlayer: AVAudioPlayer?
     
     let gradientLayer = CAGradientLayer()
     
@@ -25,8 +25,12 @@ class RandomColorizationVC: UIViewController {
             try AVAudioSession.sharedInstance().setActive(true)
             try audioPlayer = AVAudioPlayer(contentsOf: bgMusic!)
             
-            audioPlayer.prepareToPlay()
-            audioPlayer.play()
+            guard let player = audioPlayer else {
+                return
+            }
+            player.prepareToPlay()
+            player.play()
+            
         } catch let audioError as NSError {
             print(audioError)
         }
@@ -73,7 +77,11 @@ class RandomColorizationVC: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        audioPlayer.pause()
+        guard let player = audioPlayer else {
+            return
+        }
+        
+        player.pause()
     }
 
 }
