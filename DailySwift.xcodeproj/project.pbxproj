@@ -13,6 +13,8 @@
 		4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619695C1EF2A1B900029FE4 /* MenuTransitionManager.swift */; };
 		462854A81EF3BD4800DD46D0 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462854A71EF3BD4800DD46D0 /* MenuTableViewCell.swift */; };
 		462B4DF21FCDC1F600E81FF5 /* QuickActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462B4DF11FCDC1F600E81FF5 /* QuickActionViewController.swift */; };
+		462B4DF51FCF0A3400E81FF5 /* MosaiCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462B4DF41FCF0A3400E81FF5 /* MosaiCollectionViewController.swift */; };
+		462B4DFD1FCF0B1700E81FF5 /* FMMosaicLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 462B4DF91FCF0B1700E81FF5 /* FMMosaicLayout.m */; };
 		4647910A1FC942BA001F6494 /* CollectAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464791091FC942BA001F6494 /* CollectAnimateViewController.swift */; };
 		464791101FC9486D001F6494 /* AnimationImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4647910F1FC9486D001F6494 /* AnimationImageCollection.swift */; };
 		464791121FC948E8001F6494 /* AnimationCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464791111FC948E8001F6494 /* AnimationCellModel.swift */; };
@@ -41,6 +43,12 @@
 		469561501FBC683100E60233 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695614E1FBC683100E60233 /* MainViewController.swift */; };
 		469561511FBC683100E60233 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695614F1FBC683100E60233 /* MenuViewController.swift */; };
 		469561531FBC685500E60233 /* TumblrMenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469561521FBC685500E60233 /* TumblrMenuTransitionManager.swift */; };
+		46BE91141FD036F2002DD3FD /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91131FD036F2002DD3FD /* OpacityViewController.swift */; };
+		46BE91161FD03705002DD3FD /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91151FD03705002DD3FD /* PositionViewController.swift */; };
+		46BE91181FD0370F002DD3FD /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91171FD0370F002DD3FD /* ColorViewController.swift */; };
+		46BE911A1FD03718002DD3FD /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91191FD03718002DD3FD /* ScaleViewController.swift */; };
+		46BE911C1FD03725002DD3FD /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE911B1FD03725002DD3FD /* RotationViewController.swift */; };
+		46BE911E1FD03740002DD3FD /* BATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE911D1FD03740002DD3FD /* BATableViewController.swift */; };
 		46D1873D1FC2DE2300E7B8DA /* LimitCharsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D1873C1FC2DE2300E7B8DA /* LimitCharsViewController.swift */; };
 		46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */; };
 		46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410DC1EDB331400047C5A /* VideoCutter.swift */; };
@@ -90,6 +98,9 @@
 		4619695C1EF2A1B900029FE4 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTransitionManager.swift; path = "16-SlideMenu/MenuTransitionManager.swift"; sourceTree = "<group>"; };
 		462854A71EF3BD4800DD46D0 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = "16-SlideMenu/MenuTableViewCell.swift"; sourceTree = "<group>"; };
 		462B4DF11FCDC1F600E81FF5 /* QuickActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionViewController.swift; sourceTree = "<group>"; };
+		462B4DF41FCF0A3400E81FF5 /* MosaiCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaiCollectionViewController.swift; sourceTree = "<group>"; };
+		462B4DF91FCF0B1700E81FF5 /* FMMosaicLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMosaicLayout.m; sourceTree = "<group>"; };
+		462B4DFA1FCF0B1700E81FF5 /* FMMosaicLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMosaicLayout.h; sourceTree = "<group>"; };
 		464791091FC942BA001F6494 /* CollectAnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectAnimateViewController.swift; path = "20-CollectionViewAnimation/CollectAnimateViewController.swift"; sourceTree = "<group>"; };
 		4647910F1FC9486D001F6494 /* AnimationImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationImageCollection.swift; path = "20-CollectionViewAnimation/AnimationImageCollection.swift"; sourceTree = "<group>"; };
 		464791111FC948E8001F6494 /* AnimationCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationCellModel.swift; path = "20-CollectionViewAnimation/AnimationCellModel.swift"; sourceTree = "<group>"; };
@@ -119,6 +130,12 @@
 		4695614E1FBC683100E60233 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "17-TumblrMenu/MainViewController.swift"; sourceTree = "<group>"; };
 		4695614F1FBC683100E60233 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "17-TumblrMenu/MenuViewController.swift"; sourceTree = "<group>"; };
 		469561521FBC685500E60233 /* TumblrMenuTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TumblrMenuTransitionManager.swift; path = "17-TumblrMenu/TumblrMenuTransitionManager.swift"; sourceTree = "<group>"; };
+		46BE91131FD036F2002DD3FD /* OpacityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
+		46BE91151FD03705002DD3FD /* PositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
+		46BE91171FD0370F002DD3FD /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		46BE91191FD03718002DD3FD /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
+		46BE911B1FD03725002DD3FD /* RotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
+		46BE911D1FD03740002DD3FD /* BATableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BATableViewController.swift; sourceTree = "<group>"; };
 		46D1873C1FC2DE2300E7B8DA /* LimitCharsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LimitCharsViewController.swift; path = "18-LimitCharacters/LimitCharsViewController.swift"; sourceTree = "<group>"; };
 		46D410D11EDB2CDA00047C5A /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
 		46D410D81EDB2F8500047C5A /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoSplashViewController.swift; path = "10-VideoBackground/VideoSplashViewController.swift"; sourceTree = "<group>"; };
@@ -183,6 +200,24 @@
 				46053D781FC4817A006079D5 /* RefreshContents.xib */,
 			);
 			name = "19-CustomPullToRefresh";
+			sourceTree = "<group>";
+		};
+		462B4DF31FCF09F500E81FF5 /* 24-MosaicLayout */ = {
+			isa = PBXGroup;
+			children = (
+				462B4DF41FCF0A3400E81FF5 /* MosaiCollectionViewController.swift */,
+				462B4DF61FCF0B1700E81FF5 /* FMMosaicLayout */,
+			);
+			path = "24-MosaicLayout";
+			sourceTree = "<group>";
+		};
+		462B4DF61FCF0B1700E81FF5 /* FMMosaicLayout */ = {
+			isa = PBXGroup;
+			children = (
+				462B4DFA1FCF0B1700E81FF5 /* FMMosaicLayout.h */,
+				462B4DF91FCF0B1700E81FF5 /* FMMosaicLayout.m */,
+			);
+			path = FMMosaicLayout;
 			sourceTree = "<group>";
 		};
 		464791081FC94274001F6494 /* 20-CollectionViewAnimation */ = {
@@ -297,6 +332,19 @@
 			name = "17-TumblrMenu";
 			sourceTree = "<group>";
 		};
+		46BE91121FD03561002DD3FD /* 25-BasicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				46BE911D1FD03740002DD3FD /* BATableViewController.swift */,
+				46BE91131FD036F2002DD3FD /* OpacityViewController.swift */,
+				46BE91151FD03705002DD3FD /* PositionViewController.swift */,
+				46BE91171FD0370F002DD3FD /* ColorViewController.swift */,
+				46BE91191FD03718002DD3FD /* ScaleViewController.swift */,
+				46BE911B1FD03725002DD3FD /* RotationViewController.swift */,
+			);
+			path = "25-BasicAnimation";
+			sourceTree = "<group>";
+		};
 		46D1873B1FC2DC2300E7B8DA /* 18-LimitCharacters */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +456,8 @@
 				467604061FCC517F005FD155 /* 21-SwipeableCell */,
 				4676040D1FCD084E005FD155 /* 22-3DTouchQuickAction */,
 				468CF4D51FCED85400F29EEA /* 23-SlideOutMenu */,
+				462B4DF31FCF09F500E81FF5 /* 24-MosaicLayout */,
+				46BE91121FD03561002DD3FD /* 25-BasicAnimation */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
 				468CF4DD1FCED95400F29EEA /* Support */,
@@ -617,14 +667,17 @@
 				46F051941E044035006930F5 /* PullToRefreshViewController.swift in Sources */,
 				467604131FCD8694005FD155 /* SwitchWIFIViewController.swift in Sources */,
 				468CF4DF1FCEDC0E00F29EEA /* RevealAbleViewController.swift in Sources */,
+				462B4DFD1FCF0B1700E81FF5 /* FMMosaicLayout.m in Sources */,
 				467604031FCC4762005FD155 /* AnimationCollectionViewCell.swift in Sources */,
 				46F0519E1E0452A6006930F5 /* funnyCell.swift in Sources */,
 				469561531FBC685500E60233 /* TumblrMenuTransitionManager.swift in Sources */,
 				464791121FC948E8001F6494 /* AnimationCellModel.swift in Sources */,
+				46BE91181FD0370F002DD3FD /* ColorViewController.swift in Sources */,
 				46F051681E043990006930F5 /* ProjViewController.swift in Sources */,
 				469561501FBC683100E60233 /* MainViewController.swift in Sources */,
 				46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */,
 				46D1873D1FC2DE2300E7B8DA /* LimitCharsViewController.swift in Sources */,
+				46BE91161FD03705002DD3FD /* PositionViewController.swift in Sources */,
 				469561511FBC683100E60233 /* MenuViewController.swift in Sources */,
 				46D410E31EDDB6AE00047C5A /* ClearTableViewController.swift in Sources */,
 				468CF4E11FCEDE2E00F29EEA /* ChannelViewController.swift in Sources */,
@@ -633,15 +686,19 @@
 				46F0519D1E0452A6006930F5 /* funny.swift in Sources */,
 				467458EE1EDFE75B00026CC7 /* SecondTableViewController.swift in Sources */,
 				468CF4E51FCEDE6700F29EEA /* ReadLaterViewController.swift in Sources */,
+				46BE911E1FD03740002DD3FD /* BATableViewController.swift in Sources */,
 				467604111FCD8687005FD155 /* ScanViewController.swift in Sources */,
 				46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */,
 				4676040F1FCD866C005FD155 /* RunViewController.swift in Sources */,
 				46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */,
+				46BE91141FD036F2002DD3FD /* OpacityViewController.swift in Sources */,
 				46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */,
 				4676040A1FCC51F8005FD155 /* PatternCell.swift in Sources */,
 				467458EC1EDFE73600026CC7 /* FirstTableViewController.swift in Sources */,
 				467458E71EDF15E000026CC7 /* SignUpViewController.swift in Sources */,
 				46F051F11E06DEC6006930F5 /* VideoBackgroundVC.swift in Sources */,
+				46BE911C1FD03725002DD3FD /* RotationViewController.swift in Sources */,
+				462B4DF51FCF0A3400E81FF5 /* MosaiCollectionViewController.swift in Sources */,
 				46F0519F1E0452A6006930F5 /* CarouseEViewController.swift in Sources */,
 				467458E91EDF15FE00026CC7 /* LoginViewController.swift in Sources */,
 				46053D7B1FC4817A006079D5 /* CPRefreshViewController.swift in Sources */,
@@ -651,6 +708,7 @@
 				468CF4DB1FCED8F800F29EEA /* SWRevealViewController.m in Sources */,
 				467604081FCC51B7005FD155 /* SwipeableTableViewController.swift in Sources */,
 				468CF4CD1FCD8AE700F29EEA /* QuickActionHandler.swift in Sources */,
+				46BE911A1FD03718002DD3FD /* ScaleViewController.swift in Sources */,
 				46F051EF1E0660A6006930F5 /* ImageScrollerEffectVC.swift in Sources */,
 				46EB83C81EE1D91D00FE8336 /* SplashAnimation.swift in Sources */,
 				462854A81EF3BD4800DD46D0 /* MenuTableViewCell.swift in Sources */,
