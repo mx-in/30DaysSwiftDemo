@@ -46,26 +46,26 @@ class NewsTableViewController: UITableViewController, MenuTransitionManagerDeleg
         cell.backgroundColor = .clear
         
         if indexPath.row == 0 {
-            let image = UIImage(named: "1")
+            let image = UIImage(named: "16-1")
             cell.postImageView.image = image
             cell.postTitle.text = "Love mountain."
             cell.postAuthor.text = "Allen Wang"
             cell.postAuthorImageView.image = UIImage(named: "a")
             
         } else if indexPath.row == 1 {
-            cell.postImageView.image = UIImage(named: "2")
+            cell.postImageView.image = UIImage(named: "16-2")
             cell.postTitle.text = "New graphic design - LIVE FREE"
             cell.postAuthor.text = "Cole"
             cell.postAuthorImageView.image = UIImage(named: "b")
             
         } else if indexPath.row == 2 {
-            cell.postImageView.image = UIImage(named: "3")
+            cell.postImageView.image = UIImage(named: "16-3")
             cell.postTitle.text = "Summer sand"
             cell.postAuthor.text = "Daniel Hooper"
             cell.postAuthorImageView.image = UIImage(named: "c")
             
         } else {
-            cell.postImageView.image = UIImage(named: "4")
+            cell.postImageView.image = UIImage(named: "16-4")
             cell.postTitle.text = "Seeking for signal"
             cell.postAuthor.text = "Noby-Wan Kenobi"
             cell.postAuthorImageView.image = UIImage(named: "d")
