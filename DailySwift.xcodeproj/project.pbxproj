@@ -18,6 +18,10 @@
 		4647910A1FC942BA001F6494 /* CollectAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464791091FC942BA001F6494 /* CollectAnimateViewController.swift */; };
 		464791101FC9486D001F6494 /* AnimationImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4647910F1FC9486D001F6494 /* AnimationImageCollection.swift */; };
 		464791121FC948E8001F6494 /* AnimationCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464791111FC948E8001F6494 /* AnimationCellModel.swift */; };
+		4672321C1FD1735A00C29849 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4672321B1FD1735A00C29849 /* CoreDataViewController.swift */; };
+		467232231FD176B700C29849 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467232221FD176B700C29849 /* CoreDataManager.swift */; };
+		467232261FD18BDC00C29849 /* cd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 467232241FD18BDC00C29849 /* cd.xcdatamodeld */; };
+		467232271FD18BFE00C29849 /* cd.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 467232241FD18BDC00C29849 /* cd.xcdatamodeld */; };
 		467458E71EDF15E000026CC7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458E61EDF15E000026CC7 /* SignUpViewController.swift */; };
 		467458E91EDF15FE00026CC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458E81EDF15FE00026CC7 /* LoginViewController.swift */; };
 		467458EC1EDFE73600026CC7 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458EB1EDFE73600026CC7 /* FirstTableViewController.swift */; };
@@ -104,6 +108,10 @@
 		464791091FC942BA001F6494 /* CollectAnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectAnimateViewController.swift; path = "20-CollectionViewAnimation/CollectAnimateViewController.swift"; sourceTree = "<group>"; };
 		4647910F1FC9486D001F6494 /* AnimationImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationImageCollection.swift; path = "20-CollectionViewAnimation/AnimationImageCollection.swift"; sourceTree = "<group>"; };
 		464791111FC948E8001F6494 /* AnimationCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationCellModel.swift; path = "20-CollectionViewAnimation/AnimationCellModel.swift"; sourceTree = "<group>"; };
+		4672321B1FD1735A00C29849 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
+		467232211FD1753600C29849 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		467232221FD176B700C29849 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		467232251FD18BDC00C29849 /* cd.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cd.xcdatamodel; sourceTree = "<group>"; };
 		467458E61EDF15E000026CC7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "12-LoginAnimation/SignUpViewController.swift"; sourceTree = "<group>"; };
 		467458E81EDF15FE00026CC7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "12-LoginAnimation/LoginViewController.swift"; sourceTree = "<group>"; };
 		467458EB1EDFE73600026CC7 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstTableViewController.swift; path = "13-AnimateTableViewCell/FirstTableViewController.swift"; sourceTree = "<group>"; };
@@ -230,6 +238,24 @@
 				467604021FCC4762005FD155 /* AnimationCollectionViewCell.xib */,
 			);
 			name = "20-CollectionViewAnimation";
+			sourceTree = "<group>";
+		};
+		4672321A1FD1731500C29849 /* 26-CoreDataApp */ = {
+			isa = PBXGroup;
+			children = (
+				4672321B1FD1735A00C29849 /* CoreDataViewController.swift */,
+				467232221FD176B700C29849 /* CoreDataManager.swift */,
+				467232241FD18BDC00C29849 /* cd.xcdatamodeld */,
+			);
+			path = "26-CoreDataApp";
+			sourceTree = "<group>";
+		};
+		467232201FD1753500C29849 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				467232211FD1753600C29849 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		467458E51EDF104F00026CC7 /* 12-LoginAnimation */ = {
@@ -419,6 +445,7 @@
 				46F051791E043990006930F5 /* MXDailySwiftTests */,
 				46F051841E043990006930F5 /* MXDailySwiftUITests */,
 				46F051631E043990006930F5 /* Products */,
+				467232201FD1753500C29849 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -458,6 +485,7 @@
 				468CF4D51FCED85400F29EEA /* 23-SlideOutMenu */,
 				462B4DF31FCF09F500E81FF5 /* 24-MosaicLayout */,
 				46BE91121FD03561002DD3FD /* 25-BasicAnimation */,
+				4672321A1FD1731500C29849 /* 26-CoreDataApp */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
 				468CF4DD1FCED95400F29EEA /* Support */,
@@ -627,6 +655,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467232271FD18BFE00C29849 /* cd.xcdatamodeld in Resources */,
 				468D9F4F1FB99BB4008DC057 /* Assets.xcassets in Resources */,
 				46D410E01EDC4E4100047C5A /* moments.mp4 in Resources */,
 				46F051701E043990006930F5 /* LaunchScreen.storyboard in Resources */,
@@ -675,6 +704,7 @@
 				46BE91181FD0370F002DD3FD /* ColorViewController.swift in Sources */,
 				46F051681E043990006930F5 /* ProjViewController.swift in Sources */,
 				469561501FBC683100E60233 /* MainViewController.swift in Sources */,
+				4672321C1FD1735A00C29849 /* CoreDataViewController.swift in Sources */,
 				46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */,
 				46D1873D1FC2DE2300E7B8DA /* LimitCharsViewController.swift in Sources */,
 				46BE91161FD03705002DD3FD /* PositionViewController.swift in Sources */,
@@ -705,11 +735,13 @@
 				46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */,
 				46F051661E043990006930F5 /* AppDelegate.swift in Sources */,
 				4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */,
+				467232261FD18BDC00C29849 /* cd.xcdatamodeld in Sources */,
 				468CF4DB1FCED8F800F29EEA /* SWRevealViewController.m in Sources */,
 				467604081FCC51B7005FD155 /* SwipeableTableViewController.swift in Sources */,
 				468CF4CD1FCD8AE700F29EEA /* QuickActionHandler.swift in Sources */,
 				46BE911A1FD03718002DD3FD /* ScaleViewController.swift in Sources */,
 				46F051EF1E0660A6006930F5 /* ImageScrollerEffectVC.swift in Sources */,
+				467232231FD176B700C29849 /* CoreDataManager.swift in Sources */,
 				46EB83C81EE1D91D00FE8336 /* SplashAnimation.swift in Sources */,
 				462854A81EF3BD4800DD46D0 /* MenuTableViewCell.swift in Sources */,
 				462B4DF21FCDC1F600E81FF5 /* QuickActionViewController.swift in Sources */,
@@ -1012,6 +1044,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		467232241FD18BDC00C29849 /* cd.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				467232251FD18BDC00C29849 /* cd.xcdatamodel */,
+			);
+			currentVersion = 467232251FD18BDC00C29849 /* cd.xcdatamodel */;
+			path = cd.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 46F0515A1E043990006930F5 /* Project object */;
 }

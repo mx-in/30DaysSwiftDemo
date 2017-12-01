@@ -66,6 +66,7 @@
                         <segue destination="4hg-Au-VIs" kind="show" identifier="SlideOutMenu" id="ExE-WD-MQr"/>
                         <segue destination="rxi-Qm-vJj" kind="show" identifier="MosaicLayout" id="ec3-qo-Jj0"/>
                         <segue destination="Z8w-E6-Ok7" kind="show" identifier="BasicAnimation" id="MJR-MW-5Fo"/>
+                        <segue destination="E0d-g2-ebQ" kind="show" identifier="CoreDataApp" id="xbj-cy-ex1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaV-Uu-EJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -117,7 +118,35 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKv-4Q-70W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-343.19999999999999" y="-755.17241379310349"/>
+            <point key="canvasLocation" x="-418" y="-755"/>
+        </scene>
+        <!--Core Data View Controller-->
+        <scene sceneID="czp-UB-J6u">
+            <objects>
+                <tableViewController id="E0d-g2-ebQ" customClass="CoreDataViewController" customModule="DailySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="G4g-JF-Xwa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CDCell" id="zfJ-ww-o2C">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zfJ-ww-o2C" id="DH3-cF-4LG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="E0d-g2-ebQ" id="yUo-xe-LgZ"/>
+                            <outlet property="delegate" destination="E0d-g2-ebQ" id="DRT-dv-zdP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORL-m4-DdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="-755"/>
         </scene>
         <!--Pull To Refresh View Controller-->
         <scene sceneID="vQG-3b-y73">
