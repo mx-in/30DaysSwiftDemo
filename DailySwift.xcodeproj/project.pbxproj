@@ -47,6 +47,11 @@
 		469561501FBC683100E60233 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695614E1FBC683100E60233 /* MainViewController.swift */; };
 		469561511FBC683100E60233 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695614F1FBC683100E60233 /* MenuViewController.swift */; };
 		469561531FBC685500E60233 /* TumblrMenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469561521FBC685500E60233 /* TumblrMenuTransitionManager.swift */; };
+		46A0A2571FD27C41001B6E43 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A0A2561FD27C41001B6E43 /* FirstViewController.swift */; };
+		46A0A2591FD27C4E001B6E43 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A0A2581FD27C4E001B6E43 /* SecondViewController.swift */; };
+		46A0A25B1FD27C58001B6E43 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A0A25A1FD27C58001B6E43 /* ThirdViewController.swift */; };
+		46A0A25D1FD27C87001B6E43 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A0A25C1FD27C87001B6E43 /* ArticleTableViewCell.swift */; };
+		46A0A25F1FD2A244001B6E43 /* TabBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A0A25E1FD2A244001B6E43 /* TabBaseViewController.swift */; };
 		46BE91141FD036F2002DD3FD /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91131FD036F2002DD3FD /* OpacityViewController.swift */; };
 		46BE91161FD03705002DD3FD /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91151FD03705002DD3FD /* PositionViewController.swift */; };
 		46BE91181FD0370F002DD3FD /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91171FD0370F002DD3FD /* ColorViewController.swift */; };
@@ -138,6 +143,11 @@
 		4695614E1FBC683100E60233 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "17-TumblrMenu/MainViewController.swift"; sourceTree = "<group>"; };
 		4695614F1FBC683100E60233 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "17-TumblrMenu/MenuViewController.swift"; sourceTree = "<group>"; };
 		469561521FBC685500E60233 /* TumblrMenuTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TumblrMenuTransitionManager.swift; path = "17-TumblrMenu/TumblrMenuTransitionManager.swift"; sourceTree = "<group>"; };
+		46A0A2561FD27C41001B6E43 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		46A0A2581FD27C4E001B6E43 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		46A0A25A1FD27C58001B6E43 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		46A0A25C1FD27C87001B6E43 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		46A0A25E1FD2A244001B6E43 /* TabBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBaseViewController.swift; sourceTree = "<group>"; };
 		46BE91131FD036F2002DD3FD /* OpacityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
 		46BE91151FD03705002DD3FD /* PositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
 		46BE91171FD0370F002DD3FD /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
@@ -358,6 +368,18 @@
 			name = "17-TumblrMenu";
 			sourceTree = "<group>";
 		};
+		46A0A2551FD27B8B001B6E43 /* 27-TabbarApp */ = {
+			isa = PBXGroup;
+			children = (
+				46A0A2561FD27C41001B6E43 /* FirstViewController.swift */,
+				46A0A2581FD27C4E001B6E43 /* SecondViewController.swift */,
+				46A0A25A1FD27C58001B6E43 /* ThirdViewController.swift */,
+				46A0A25C1FD27C87001B6E43 /* ArticleTableViewCell.swift */,
+				46A0A25E1FD2A244001B6E43 /* TabBaseViewController.swift */,
+			);
+			path = "27-TabbarApp";
+			sourceTree = "<group>";
+		};
 		46BE91121FD03561002DD3FD /* 25-BasicAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +508,7 @@
 				462B4DF31FCF09F500E81FF5 /* 24-MosaicLayout */,
 				46BE91121FD03561002DD3FD /* 25-BasicAnimation */,
 				4672321A1FD1731500C29849 /* 26-CoreDataApp */,
+				46A0A2551FD27B8B001B6E43 /* 27-TabbarApp */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
 				468CF4DD1FCED95400F29EEA /* Support */,
@@ -705,6 +728,8 @@
 				46F051681E043990006930F5 /* ProjViewController.swift in Sources */,
 				469561501FBC683100E60233 /* MainViewController.swift in Sources */,
 				4672321C1FD1735A00C29849 /* CoreDataViewController.swift in Sources */,
+				46A0A25B1FD27C58001B6E43 /* ThirdViewController.swift in Sources */,
+				46A0A25F1FD2A244001B6E43 /* TabBaseViewController.swift in Sources */,
 				46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */,
 				46D1873D1FC2DE2300E7B8DA /* LimitCharsViewController.swift in Sources */,
 				46BE91161FD03705002DD3FD /* PositionViewController.swift in Sources */,
@@ -719,6 +744,7 @@
 				46BE911E1FD03740002DD3FD /* BATableViewController.swift in Sources */,
 				467604111FCD8687005FD155 /* ScanViewController.swift in Sources */,
 				46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */,
+				46A0A2571FD27C41001B6E43 /* FirstViewController.swift in Sources */,
 				4676040F1FCD866C005FD155 /* RunViewController.swift in Sources */,
 				46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */,
 				46BE91141FD036F2002DD3FD /* OpacityViewController.swift in Sources */,
@@ -729,11 +755,13 @@
 				46F051F11E06DEC6006930F5 /* VideoBackgroundVC.swift in Sources */,
 				46BE911C1FD03725002DD3FD /* RotationViewController.swift in Sources */,
 				462B4DF51FCF0A3400E81FF5 /* MosaiCollectionViewController.swift in Sources */,
+				46A0A25D1FD27C87001B6E43 /* ArticleTableViewCell.swift in Sources */,
 				46F0519F1E0452A6006930F5 /* CarouseEViewController.swift in Sources */,
 				467458E91EDF15FE00026CC7 /* LoginViewController.swift in Sources */,
 				46053D7B1FC4817A006079D5 /* CPRefreshViewController.swift in Sources */,
 				46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */,
 				46F051661E043990006930F5 /* AppDelegate.swift in Sources */,
+				46A0A2591FD27C4E001B6E43 /* SecondViewController.swift in Sources */,
 				4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */,
 				467232261FD18BDC00C29849 /* cd.xcdatamodeld in Sources */,
 				468CF4DB1FCED8F800F29EEA /* SWRevealViewController.m in Sources */,
