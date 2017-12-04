@@ -58,5 +58,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let isHandled = quickActionHandler.handleShortcutItem(shortcutItem)
         completionHandler(isHandled)
     }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        let viewControllers = (window?.rootViewController as! UINavigationController).viewControllers
+        
+        if viewControllers.last!.self.isKind(of: ProjViewController.self) {
+            viewControllers.last!.performSegue(withIdentifier: "Spotlight", sender: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                            (self.window?.rootViewController as! UINavigationController).viewControllers.last!.restoreUserActivityState(userActivity)
+            })
+            
+        } else if viewControllers.last!.self.isKind(of: MoviesTableViewController.self) {
+            viewControllers.last!.restoreUserActivityState(userActivity)
+        } else {
+            viewControllers.last!.navigationController?.popToViewController(viewControllers[0], animated: false)
+            viewControllers[0].performSegue(withIdentifier: "Spotlight", sender: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                (self.window?.rootViewController as! UINavigationController).viewControllers.last!.restoreUserActivityState(userActivity)
+            })
+        }
+        
+        return true
+    }
 }
 
