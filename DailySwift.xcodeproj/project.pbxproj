@@ -18,6 +18,7 @@
 		4647910A1FC942BA001F6494 /* CollectAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464791091FC942BA001F6494 /* CollectAnimateViewController.swift */; };
 		464791101FC9486D001F6494 /* AnimationImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4647910F1FC9486D001F6494 /* AnimationImageCollection.swift */; };
 		464791121FC948E8001F6494 /* AnimationCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464791111FC948E8001F6494 /* AnimationCellModel.swift */; };
+		464BC7201FD6C66100157339 /* SignupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BC71F1FD6C66100157339 /* SignupProfileViewController.swift */; };
 		4672321C1FD1735A00C29849 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4672321B1FD1735A00C29849 /* CoreDataViewController.swift */; };
 		467232231FD176B700C29849 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467232221FD176B700C29849 /* CoreDataManager.swift */; };
 		467232261FD18BDC00C29849 /* cd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 467232241FD18BDC00C29849 /* cd.xcdatamodeld */; };
@@ -61,6 +62,16 @@
 		46A0A25B1FD27C58001B6E43 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A0A25A1FD27C58001B6E43 /* ThirdViewController.swift */; };
 		46A0A25D1FD27C87001B6E43 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A0A25C1FD27C87001B6E43 /* ArticleTableViewCell.swift */; };
 		46A0A25F1FD2A244001B6E43 /* TabBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A0A25E1FD2A244001B6E43 /* TabBaseViewController.swift */; };
+		46B08D861FD6D34200314491 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D7B1FD6D33F00314491 /* AnimationController.swift */; };
+		46B08D871FD6D34200314491 /* ImageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D7C1FD6D33F00314491 /* ImageAction.swift */; };
+		46B08D881FD6D34200314491 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D7D1FD6D33F00314491 /* ImageCollectionViewCell.swift */; };
+		46B08D891FD6D34200314491 /* ImagePickerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D7E1FD6D33F00314491 /* ImagePickerCollectionView.swift */; };
+		46B08D8A1FD6D34200314491 /* ImagePickerSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D801FD6D33F00314491 /* ImagePickerSheetController.swift */; };
+		46B08D8B1FD6D34200314491 /* ImagePreviewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D811FD6D33F00314491 /* ImagePreviewFlowLayout.swift */; };
+		46B08D8C1FD6D34200314491 /* ImagePreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D821FD6D33F00314491 /* ImagePreviewTableViewCell.swift */; };
+		46B08D8D1FD6D34200314491 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B08D831FD6D33F00314491 /* Images.xcassets */; };
+		46B08D8E1FD6D34200314491 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46B08D841FD6D33F00314491 /* Info.plist */; };
+		46B08D8F1FD6D34200314491 /* PreviewSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D851FD6D33F00314491 /* PreviewSupplementaryView.swift */; };
 		46BE91141FD036F2002DD3FD /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91131FD036F2002DD3FD /* OpacityViewController.swift */; };
 		46BE91161FD03705002DD3FD /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91151FD03705002DD3FD /* PositionViewController.swift */; };
 		46BE91181FD0370F002DD3FD /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91171FD0370F002DD3FD /* ColorViewController.swift */; };
@@ -123,6 +134,7 @@
 		464791091FC942BA001F6494 /* CollectAnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectAnimateViewController.swift; path = "20-CollectionViewAnimation/CollectAnimateViewController.swift"; sourceTree = "<group>"; };
 		4647910F1FC9486D001F6494 /* AnimationImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationImageCollection.swift; path = "20-CollectionViewAnimation/AnimationImageCollection.swift"; sourceTree = "<group>"; };
 		464791111FC948E8001F6494 /* AnimationCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationCellModel.swift; path = "20-CollectionViewAnimation/AnimationCellModel.swift"; sourceTree = "<group>"; };
+		464BC71F1FD6C66100157339 /* SignupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupProfileViewController.swift; sourceTree = "<group>"; };
 		4672321B1FD1735A00C29849 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		467232211FD1753600C29849 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		467232221FD176B700C29849 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -169,6 +181,17 @@
 		46A0A25E1FD2A244001B6E43 /* TabBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBaseViewController.swift; sourceTree = "<group>"; };
 		46A0A2631FD44E5D001B6E43 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
 		46A0A2641FD44E7D001B6E43 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		46B08D7B1FD6D33F00314491 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		46B08D7C1FD6D33F00314491 /* ImageAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAction.swift; sourceTree = "<group>"; };
+		46B08D7D1FD6D33F00314491 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		46B08D7E1FD6D33F00314491 /* ImagePickerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerCollectionView.swift; sourceTree = "<group>"; };
+		46B08D7F1FD6D33F00314491 /* ImagePickerSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerSheetController.h; sourceTree = "<group>"; };
+		46B08D801FD6D33F00314491 /* ImagePickerSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerSheetController.swift; sourceTree = "<group>"; };
+		46B08D811FD6D33F00314491 /* ImagePreviewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewFlowLayout.swift; sourceTree = "<group>"; };
+		46B08D821FD6D33F00314491 /* ImagePreviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewTableViewCell.swift; sourceTree = "<group>"; };
+		46B08D831FD6D33F00314491 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46B08D841FD6D33F00314491 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B08D851FD6D33F00314491 /* PreviewSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewSupplementaryView.swift; sourceTree = "<group>"; };
 		46BE91131FD036F2002DD3FD /* OpacityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
 		46BE91151FD03705002DD3FD /* PositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
 		46BE91171FD0370F002DD3FD /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +293,15 @@
 				467604021FCC4762005FD155 /* AnimationCollectionViewCell.xib */,
 			);
 			name = "20-CollectionViewAnimation";
+			sourceTree = "<group>";
+		};
+		464BC71E1FD6C35700157339 /* 29-ImagePickerSheetController */ = {
+			isa = PBXGroup;
+			children = (
+				464BC71F1FD6C66100157339 /* SignupProfileViewController.swift */,
+				46B08D7A1FD6D33F00314491 /* ImagePickerSheet */,
+			);
+			path = "29-ImagePickerSheetController";
 			sourceTree = "<group>";
 		};
 		4672321A1FD1731500C29849 /* 26-CoreDataApp */ = {
@@ -429,6 +461,24 @@
 			path = "27-TabbarApp";
 			sourceTree = "<group>";
 		};
+		46B08D7A1FD6D33F00314491 /* ImagePickerSheet */ = {
+			isa = PBXGroup;
+			children = (
+				46B08D7B1FD6D33F00314491 /* AnimationController.swift */,
+				46B08D7C1FD6D33F00314491 /* ImageAction.swift */,
+				46B08D7D1FD6D33F00314491 /* ImageCollectionViewCell.swift */,
+				46B08D7E1FD6D33F00314491 /* ImagePickerCollectionView.swift */,
+				46B08D7F1FD6D33F00314491 /* ImagePickerSheetController.h */,
+				46B08D801FD6D33F00314491 /* ImagePickerSheetController.swift */,
+				46B08D811FD6D33F00314491 /* ImagePreviewFlowLayout.swift */,
+				46B08D821FD6D33F00314491 /* ImagePreviewTableViewCell.swift */,
+				46B08D831FD6D33F00314491 /* Images.xcassets */,
+				46B08D841FD6D33F00314491 /* Info.plist */,
+				46B08D851FD6D33F00314491 /* PreviewSupplementaryView.swift */,
+			);
+			path = ImagePickerSheet;
+			sourceTree = "<group>";
+		};
 		46BE91121FD03561002DD3FD /* 25-BasicAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +609,7 @@
 				4672321A1FD1731500C29849 /* 26-CoreDataApp */,
 				46A0A2551FD27B8B001B6E43 /* 27-TabbarApp */,
 				468D144F1FD57B8600E3A29A /* 28-Spotlight */,
+				464BC71E1FD6C35700157339 /* 29-ImagePickerSheetController */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
 				468CF4DD1FCED95400F29EEA /* Support */,
@@ -728,12 +779,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B08D8E1FD6D34200314491 /* Info.plist in Resources */,
 				467232271FD18BFE00C29849 /* cd.xcdatamodeld in Resources */,
 				468D9F4F1FB99BB4008DC057 /* Assets.xcassets in Resources */,
 				46D410E01EDC4E4100047C5A /* moments.mp4 in Resources */,
 				46F051701E043990006930F5 /* LaunchScreen.storyboard in Resources */,
 				468D145E1FD57B8700E3A29A /* spectre.jpg in Resources */,
 				46F051A71E059616006930F5 /* Ecstasy.mp3 in Resources */,
+				46B08D8D1FD6D34200314491 /* Images.xcassets in Resources */,
 				468D145D1FD57B8700E3A29A /* pixels.jpg in Resources */,
 				46F0516B1E043990006930F5 /* Main.storyboard in Resources */,
 				46053D7A1FC4817A006079D5 /* RefreshContents.xib in Resources */,
@@ -768,6 +821,7 @@
 			files = (
 				46F051981E044DEF006930F5 /* StopViewController.swift in Sources */,
 				468CF4E71FCEDE8700F29EEA /* BackTableViewController.swift in Sources */,
+				46B08D891FD6D34200314491 /* ImagePickerCollectionView.swift in Sources */,
 				4647910A1FC942BA001F6494 /* CollectAnimateViewController.swift in Sources */,
 				467458F01EE0FDE100026CC7 /* EmojiMachineViewController.swift in Sources */,
 				464791101FC9486D001F6494 /* AnimationImageCollection.swift in Sources */,
@@ -784,6 +838,7 @@
 				46F051681E043990006930F5 /* ProjViewController.swift in Sources */,
 				469561501FBC683100E60233 /* MainViewController.swift in Sources */,
 				4672321C1FD1735A00C29849 /* CoreDataViewController.swift in Sources */,
+				46B08D861FD6D34200314491 /* AnimationController.swift in Sources */,
 				46A0A25B1FD27C58001B6E43 /* ThirdViewController.swift in Sources */,
 				46A0A25F1FD2A244001B6E43 /* TabBaseViewController.swift in Sources */,
 				4681C7931FD6428B00C5F9ED /* SpotlightManager.swift in Sources */,
@@ -796,18 +851,22 @@
 				468CF4E11FCEDE2E00F29EEA /* ChannelViewController.swift in Sources */,
 				468CF4E31FCEDE4700F29EEA /* FriendReadViewController.swift in Sources */,
 				46F051A91E059901006930F5 /* RandomColorizationVC.swift in Sources */,
+				464BC7201FD6C66100157339 /* SignupProfileViewController.swift in Sources */,
 				46F0519D1E0452A6006930F5 /* funny.swift in Sources */,
 				467458EE1EDFE75B00026CC7 /* SecondTableViewController.swift in Sources */,
 				468CF4E51FCEDE6700F29EEA /* ReadLaterViewController.swift in Sources */,
 				46BE911E1FD03740002DD3FD /* BATableViewController.swift in Sources */,
 				467604111FCD8687005FD155 /* ScanViewController.swift in Sources */,
 				46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */,
+				46B08D8A1FD6D34200314491 /* ImagePickerSheetController.swift in Sources */,
 				46A0A2571FD27C41001B6E43 /* FirstViewController.swift in Sources */,
 				4676040F1FCD866C005FD155 /* RunViewController.swift in Sources */,
 				46D410DD1EDB331400047C5A /* VideoCutter.swift in Sources */,
 				46BE91141FD036F2002DD3FD /* OpacityViewController.swift in Sources */,
 				46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */,
+				46B08D871FD6D34200314491 /* ImageAction.swift in Sources */,
 				4676040A1FCC51F8005FD155 /* PatternCell.swift in Sources */,
+				46B08D8F1FD6D34200314491 /* PreviewSupplementaryView.swift in Sources */,
 				467458EC1EDFE73600026CC7 /* FirstTableViewController.swift in Sources */,
 				467458E71EDF15E000026CC7 /* SignUpViewController.swift in Sources */,
 				46F051F11E06DEC6006930F5 /* VideoBackgroundVC.swift in Sources */,
@@ -816,6 +875,9 @@
 				46A0A25D1FD27C87001B6E43 /* ArticleTableViewCell.swift in Sources */,
 				46F0519F1E0452A6006930F5 /* CarouseEViewController.swift in Sources */,
 				467458E91EDF15FE00026CC7 /* LoginViewController.swift in Sources */,
+				46B08D881FD6D34200314491 /* ImageCollectionViewCell.swift in Sources */,
+				46B08D8B1FD6D34200314491 /* ImagePreviewFlowLayout.swift in Sources */,
+				46B08D8C1FD6D34200314491 /* ImagePreviewTableViewCell.swift in Sources */,
 				46053D7B1FC4817A006079D5 /* CPRefreshViewController.swift in Sources */,
 				46D410D91EDB2F8500047C5A /* VideoSplashViewController.swift in Sources */,
 				46F051661E043990006930F5 /* AppDelegate.swift in Sources */,

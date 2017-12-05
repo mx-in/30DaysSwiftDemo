@@ -75,6 +75,7 @@
                         <segue destination="E0d-g2-ebQ" kind="show" identifier="CoreDataApp" id="xbj-cy-ex1"/>
                         <segue destination="h7I-JV-jwf" kind="show" identifier="TabbarApp" id="HPr-ak-ZhW"/>
                         <segue destination="qVq-bS-bVn" kind="show" identifier="Spotlight" id="5oI-LJ-es6"/>
+                        <segue destination="7ov-Lg-5ox" kind="show" identifier="ImagePickerSheetController" id="shA-i4-7kA"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaV-Uu-EJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -356,6 +357,130 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irQ-3J-taU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.79999999999995" y="-761.46926536731644"/>
+        </scene>
+        <!--Signup Profile View Controller-->
+        <scene sceneID="xhj-mr-ZmI">
+            <objects>
+                <viewController id="7ov-Lg-5ox" customClass="SignupProfileViewController" customModule="DailySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FnN-hx-c3G"/>
+                        <viewControllerLayoutGuide type="bottom" id="wzr-9Q-E62"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wxV-W6-uJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon" translatesAutoresizingMaskIntoConstraints="NO" id="Efa-SG-xA8">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJh-bc-KAv">
+                                <rect key="frame" x="300" y="72" width="59" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="gcP-FC-syE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="tintColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfU-pH-JmU">
+                                <rect key="frame" x="16" y="72" width="36" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="r3H-TA-fQR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="tintColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="0.50338134769999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnDidClick:" destination="7ov-Lg-5ox" eventType="touchUpInside" id="eDQ-ig-IyK"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFg-Au-b6D">
+                                <rect key="frame" x="20" y="217" width="335" height="62"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BtE-hA-bEe">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="S8M-JT-oSV"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTZ-35-BcF">
+                                        <rect key="frame" x="0.0" y="38" width="335" height="1"/>
+                                        <color key="backgroundColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="0W7-qC-RjX"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We respect your privacy. Your information is safe with us." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzz-IV-rmw">
+                                        <rect key="frame" x="12" y="47" width="311" height="15"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.30268554689999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZTZ-35-BcF" firstAttribute="leading" secondItem="sFg-Au-b6D" secondAttribute="leading" id="0wo-lb-rXP"/>
+                                    <constraint firstItem="BtE-hA-bEe" firstAttribute="top" secondItem="sFg-Au-b6D" secondAttribute="top" id="2Oa-4Z-MPZ"/>
+                                    <constraint firstAttribute="height" constant="62" id="9SM-KY-VHw"/>
+                                    <constraint firstItem="Fzz-IV-rmw" firstAttribute="top" secondItem="ZTZ-35-BcF" secondAttribute="bottom" constant="8" id="ByM-mE-4S0"/>
+                                    <constraint firstItem="Fzz-IV-rmw" firstAttribute="centerX" secondItem="ZTZ-35-BcF" secondAttribute="centerX" id="Me9-dI-inh"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZTZ-35-BcF" secondAttribute="trailing" id="NLY-th-NdP"/>
+                                    <constraint firstItem="BtE-hA-bEe" firstAttribute="leading" secondItem="sFg-Au-b6D" secondAttribute="leading" id="hxB-66-oAz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fzz-IV-rmw" secondAttribute="bottom" id="ich-Od-JN9"/>
+                                    <constraint firstAttribute="trailing" secondItem="BtE-hA-bEe" secondAttribute="trailing" id="juK-bk-fTe"/>
+                                    <constraint firstItem="ZTZ-35-BcF" firstAttribute="top" secondItem="BtE-hA-bEe" secondAttribute="bottom" constant="8" id="lPp-EA-pet"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="dSS-Ib-R8M">
+                                <rect key="frame" x="137" y="94" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="MHQ-vv-yKD"/>
+                                    <constraint firstAttribute="width" constant="100" id="gPg-5l-YV1"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vCb-X4-9QP" appends="YES" id="7aZ-ok-6dd"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sFg-Au-b6D" firstAttribute="top" secondItem="dSS-Ib-R8M" secondAttribute="bottom" constant="23" id="5Lx-0a-cKE"/>
+                            <constraint firstItem="rJh-bc-KAv" firstAttribute="top" secondItem="FnN-hx-c3G" secondAttribute="bottom" constant="8" id="BqF-Xs-MnV"/>
+                            <constraint firstItem="wzr-9Q-E62" firstAttribute="top" secondItem="Efa-SG-xA8" secondAttribute="bottom" id="ETQ-7c-b4A"/>
+                            <constraint firstItem="Efa-SG-xA8" firstAttribute="leading" secondItem="wxV-W6-uJ3" secondAttribute="leading" id="Kt3-Po-MUs"/>
+                            <constraint firstItem="sFg-Au-b6D" firstAttribute="leading" secondItem="wxV-W6-uJ3" secondAttribute="leadingMargin" constant="4" id="L4T-0d-Sqj"/>
+                            <constraint firstItem="rJh-bc-KAv" firstAttribute="trailing" secondItem="wxV-W6-uJ3" secondAttribute="trailingMargin" id="NbY-Gl-ckb"/>
+                            <constraint firstItem="wzr-9Q-E62" firstAttribute="top" secondItem="Efa-SG-xA8" secondAttribute="bottom" id="Sdl-eW-7t0"/>
+                            <constraint firstItem="sFg-Au-b6D" firstAttribute="centerX" secondItem="dSS-Ib-R8M" secondAttribute="centerX" id="UPu-Nl-k7m"/>
+                            <constraint firstItem="sFg-Au-b6D" firstAttribute="centerX" secondItem="Efa-SG-xA8" secondAttribute="centerX" id="bfA-5Z-hSk"/>
+                            <constraint firstItem="wzr-9Q-E62" firstAttribute="top" secondItem="sFg-Au-b6D" secondAttribute="bottom" constant="388" id="cO3-i5-6bM"/>
+                            <constraint firstItem="zfU-pH-JmU" firstAttribute="top" secondItem="FnN-hx-c3G" secondAttribute="bottom" constant="8" id="fzP-x2-tpK"/>
+                            <constraint firstItem="zfU-pH-JmU" firstAttribute="leading" secondItem="wxV-W6-uJ3" secondAttribute="leadingMargin" id="lxU-b8-z2H"/>
+                            <constraint firstAttribute="trailing" secondItem="Efa-SG-xA8" secondAttribute="trailing" id="uHa-sN-fSd"/>
+                            <constraint firstItem="Efa-SG-xA8" firstAttribute="top" secondItem="FnN-hx-c3G" secondAttribute="bottom" constant="-20" id="y61-ib-1uZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="sFg-Au-b6D" id="ghB-H5-umF"/>
+                        <outlet property="userNameTextField" destination="BtE-hA-bEe" id="Fnw-mL-N7j"/>
+                        <outlet property="userProfileImageView" destination="dSS-Ib-R8M" id="gpd-Dx-4G7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4z8-EI-hkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vCb-X4-9QP">
+                    <connections>
+                        <action selector="pickProfileImage:" destination="7ov-Lg-5ox" id="cMg-YD-VQK"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1604" y="-761.46926536731644"/>
         </scene>
         <!--Pull To Refresh View Controller-->
         <scene sceneID="vQG-3b-y73">
@@ -2659,11 +2784,13 @@
         <image name="blue" width="375" height="667"/>
         <image name="bodyline" width="596" height="595"/>
         <image name="colored ASCII art" width="867" height="667"/>
+        <image name="defaultAvatar" width="150" height="150"/>
         <image name="emoji alpha me" width="200" height="200"/>
         <image name="emojiself avatar" width="500" height="500"/>
         <image name="hugo" width="256" height="256"/>
         <image name="login-secondary-logo" width="218" height="66"/>
         <image name="mengto" width="200" height="200"/>
+        <image name="moon" width="375" height="667"/>
         <image name="music play" width="148" height="148"/>
         <image name="my workflow flow" width="512" height="282"/>
         <image name="newPost" width="48" height="34"/>
