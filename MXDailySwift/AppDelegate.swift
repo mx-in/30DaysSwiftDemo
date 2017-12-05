@@ -59,22 +59,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         completionHandler(isHandled)
     }
     
+//28-Spotlight
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        let viewControllers = (window?.rootViewController as! UINavigationController).viewControllers
         
-        if viewControllers.last!.self.isKind(of: ProjViewController.self) {
-            viewControllers.last!.performSegue(withIdentifier: "Spotlight", sender: nil)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
-                            (self.window?.rootViewController as! UINavigationController).viewControllers.last!.restoreUserActivityState(userActivity)
-            })
+        var viewControllers: [UIViewController] {
+           return (window?.rootViewController as! UINavigationController).viewControllers
+        }
+        
+        var lastVC: UIViewController {
+            return viewControllers.last!
+        }
+        
+        func showSpolightVC() {
+            lastVC.performSegue(withIdentifier: "Spotlight", sender: nil)
+            print(viewControllers)
+            print(lastVC)
+            lastVC.restoreUserActivityState(userActivity)
+        }
+        
+        if lastVC.self.isKind(of: ProjViewController.self) {
+            showSpolightVC()
             
-        } else if viewControllers.last!.self.isKind(of: MoviesTableViewController.self) {
-            viewControllers.last!.restoreUserActivityState(userActivity)
+        } else if lastVC.self.isKind(of: MoviesTableViewController.self) {
+            lastVC.restoreUserActivityState(userActivity)
+            
         } else {
-            viewControllers.last!.navigationController?.popToViewController(viewControllers[0], animated: false)
-            viewControllers[0].performSegue(withIdentifier: "Spotlight", sender: nil)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
-                (self.window?.rootViewController as! UINavigationController).viewControllers.last!.restoreUserActivityState(userActivity)
+            lastVC.navigationController!.popToViewController(viewControllers[0], animated: false)
+//          ???? why must to wait for a minutes, otherwise MoviesViewController not in controllers
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                showSpolightVC()
             })
         }
         

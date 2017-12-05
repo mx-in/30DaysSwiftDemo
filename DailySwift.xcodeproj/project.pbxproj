@@ -34,6 +34,7 @@
 		4676040F1FCD866C005FD155 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676040E1FCD8669005FD155 /* RunViewController.swift */; };
 		467604111FCD8687005FD155 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467604101FCD8687005FD155 /* ScanViewController.swift */; };
 		467604131FCD8694005FD155 /* SwitchWIFIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467604121FCD8694005FD155 /* SwitchWIFIViewController.swift */; };
+		4681C7931FD6428B00C5F9ED /* SpotlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681C7921FD6428B00C5F9ED /* SpotlightManager.swift */; };
 		46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */; };
 		46834DF11EEEE9DE00CF0579 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */; };
 		468CF4CD1FCD8AE700F29EEA /* QuickActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CF4CC1FCD8AE700F29EEA /* QuickActionHandler.swift */; };
@@ -138,6 +139,7 @@
 		4676040E1FCD8669005FD155 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 		467604101FCD8687005FD155 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		467604121FCD8694005FD155 /* SwitchWIFIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchWIFIViewController.swift; sourceTree = "<group>"; };
+		4681C7921FD6428B00C5F9ED /* SpotlightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightManager.swift; sourceTree = "<group>"; };
 		46834DEE1EEEE6B200CF0579 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewController.swift; path = "16-SlideMenu/NewsTableViewController.swift"; sourceTree = "<group>"; };
 		46834DF01EEEE9DE00CF0579 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = "16-SlideMenu/NewsTableViewCell.swift"; sourceTree = "<group>"; };
 		468CF4CC1FCD8AE700F29EEA /* QuickActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionHandler.swift; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 				468D14501FD57B8600E3A29A /* MoviesTableViewController.swift */,
 				468D14511FD57B8600E3A29A /* MovieSummaryCell.swift */,
 				46E0C0E81FD5A68A007AD8DB /* MovieDetailViewController.swift */,
+				4681C7921FD6428B00C5F9ED /* SpotlightManager.swift */,
 				468D14521FD57B8600E3A29A /* Sample Data */,
 			);
 			path = "28-Spotlight";
@@ -783,6 +786,7 @@
 				4672321C1FD1735A00C29849 /* CoreDataViewController.swift in Sources */,
 				46A0A25B1FD27C58001B6E43 /* ThirdViewController.swift in Sources */,
 				46A0A25F1FD2A244001B6E43 /* TabBaseViewController.swift in Sources */,
+				4681C7931FD6428B00C5F9ED /* SpotlightManager.swift in Sources */,
 				468D14591FD57B8700E3A29A /* MoviesTableViewController.swift in Sources */,
 				46834DEF1EEEE6B200CF0579 /* NewsTableViewController.swift in Sources */,
 				46D1873D1FC2DE2300E7B8DA /* LimitCharsViewController.swift in Sources */,

@@ -15,15 +15,13 @@ class MoviesTableViewController: UITableViewController {
     let cellIdentifier = "movieCell"
     let pushDetailIdentifier = "ShowMovieDetails"
     
-    var moviesInfos: NSMutableArray!
+    var spManager = SpotlightManager()
     var selectedIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadMoviesInfo()
-        setupSearchableContent()
-
+        spManager.setupSearchableContent()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -33,28 +31,21 @@ class MoviesTableViewController: UITableViewController {
         
         if identifier == pushDetailIdentifier {
             let detailVC = segue.destination as! MovieDetailViewController
-            let movie = Movie(movieDic: moviesInfos[selectedIndex] as! [String : String])
-            detailVC.movie = movie
+            
+            guard let movieDic = spManager.movie(at: selectedIndex) else {
+                return
+            }
+            detailVC.movie = Movie(movieDic: movieDic)
         }
     }
     
-    func loadMoviesInfo() {
-        let resourceName = "MoviesData"
-        let resourceType = "plist"
-
-        if let path = Bundle.main.path(forResource: resourceName, ofType: resourceType) {
-            moviesInfos = NSMutableArray(contentsOfFile: path)
-        }
-    }
-
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let movies = moviesInfos else {
+        guard let movies = spManager.moviesInfo else {
             return 0
         }
         return movies.count
@@ -62,7 +53,10 @@ class MoviesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MovieSummaryCell
-        let movieDic = moviesInfos[indexPath.row] as! [String : String]
+        
+        guard let movieDic = spManager.movie(at: indexPath.row) else {
+            return cell
+        }
         let movie = Movie(movieDic: movieDic)
         cell.prepareCell(withMovie: movie)
         
@@ -93,44 +87,4 @@ extension MoviesTableViewController {
         }
     }
     
-    func setupSearchableContent() {
-        var searchAbleItems = [CSSearchableItem]()
-        
-        moviesInfos.forEach { movieInfo in
-            let movie = movieInfo as! [String : String]
-            let searchAbleItemAttributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
-            searchAbleItemAttributeSet.title = movie["Title"]!
-            
-            let imagePathParts = movie["Image"]!.components(separatedBy: ".")
-            searchAbleItemAttributeSet.thumbnailURL = Bundle.main.url(forResource: imagePathParts[0], withExtension: imagePathParts[1])
-            
-            searchAbleItemAttributeSet.contentDescription = movie["Description"]!
-            
-            var keywords = [String]()
-            let movieCategorys = movie["Category"]!.components(separatedBy: ", ")
-            movieCategorys.forEach({ category in
-                keywords.append(category)
-            })
-            
-            let stars = movie["Stars"]?.components(separatedBy: ", ")
-            stars?.forEach({ star in
-                keywords.append(star)
-            })
-            
-            searchAbleItemAttributeSet.keywords = keywords
-            
-            let searchableItem = CSSearchableItem(uniqueIdentifier: "mx.dalySwift.Spotligh.\(moviesInfos.index(of: movieInfo))", domainIdentifier: "movies", attributeSet: searchAbleItemAttributeSet)
-            searchAbleItems.append(searchableItem)
-        }
-        
-        CSSearchableIndex.default().indexSearchableItems(searchAbleItems, completionHandler: { err in
-            if let error = err {
-                print(error.localizedDescription)
-            }
-        })
-
-    }
 }
-
-
-
