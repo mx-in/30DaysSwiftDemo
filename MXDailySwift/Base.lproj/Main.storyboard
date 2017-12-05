@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="26P-iU-juw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="26P-iU-juw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -302,7 +302,6 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIU-WJ-ycu">
                                             <rect key="frame" x="84" y="11" width="211" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="211" id="CqA-dV-or2"/>
                                                 <constraint firstAttribute="height" constant="21" id="tjx-CS-il1"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
@@ -329,7 +328,7 @@
                                         <constraint firstItem="ymV-bY-grY" firstAttribute="bottom" secondItem="Doh-py-eWe" secondAttribute="bottomMargin" id="fRb-gV-8tM"/>
                                         <constraint firstItem="ymV-bY-grY" firstAttribute="leading" secondItem="Doh-py-eWe" secondAttribute="leading" constant="16" id="hxh-ED-LX9"/>
                                         <constraint firstItem="vIU-WJ-ycu" firstAttribute="top" secondItem="Doh-py-eWe" secondAttribute="top" constant="11" id="jd8-AA-Q7S"/>
-                                        <constraint firstItem="vIU-WJ-ycu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ymV-bY-grY" secondAttribute="trailing" constant="8" symbolic="YES" id="pqI-an-fKP"/>
+                                        <constraint firstItem="vIU-WJ-ycu" firstAttribute="leading" secondItem="ymV-bY-grY" secondAttribute="trailing" constant="8" symbolic="YES" id="pqI-an-fKP"/>
                                         <constraint firstItem="CxT-8L-i4z" firstAttribute="top" secondItem="vIU-WJ-ycu" secondAttribute="bottom" constant="8" id="prh-22-N4o"/>
                                         <constraint firstItem="xJz-F4-77M" firstAttribute="leading" secondItem="CxT-8L-i4z" secondAttribute="trailing" constant="7.5" id="v2t-lb-vgz"/>
                                         <constraint firstAttribute="trailing" secondItem="vIU-WJ-ycu" secondAttribute="trailing" constant="80" id="wuQ-J4-CpG"/>
