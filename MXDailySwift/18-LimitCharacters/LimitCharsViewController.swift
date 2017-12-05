@@ -33,6 +33,10 @@ class LimitCharsViewController: UIViewController {
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     @IBAction func didClickCloseBtn(_ sender: UIButton) {
         self.navigationController!.popViewController(animated: true)
     }
