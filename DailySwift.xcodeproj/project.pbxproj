@@ -19,6 +19,7 @@
 		464791101FC9486D001F6494 /* AnimationImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4647910F1FC9486D001F6494 /* AnimationImageCollection.swift */; };
 		464791121FC948E8001F6494 /* AnimationCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464791111FC948E8001F6494 /* AnimationCellModel.swift */; };
 		464BC7201FD6C66100157339 /* SignupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BC71F1FD6C66100157339 /* SignupProfileViewController.swift */; };
+		4658FAA71FD8266B00A9588A /* WikiFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658FAA61FD8266B00A9588A /* WikiFaceViewController.swift */; };
 		4672321C1FD1735A00C29849 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4672321B1FD1735A00C29849 /* CoreDataViewController.swift */; };
 		467232231FD176B700C29849 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467232221FD176B700C29849 /* CoreDataManager.swift */; };
 		467232261FD18BDC00C29849 /* cd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 467232241FD18BDC00C29849 /* cd.xcdatamodeld */; };
@@ -135,6 +136,7 @@
 		4647910F1FC9486D001F6494 /* AnimationImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationImageCollection.swift; path = "20-CollectionViewAnimation/AnimationImageCollection.swift"; sourceTree = "<group>"; };
 		464791111FC948E8001F6494 /* AnimationCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationCellModel.swift; path = "20-CollectionViewAnimation/AnimationCellModel.swift"; sourceTree = "<group>"; };
 		464BC71F1FD6C66100157339 /* SignupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupProfileViewController.swift; sourceTree = "<group>"; };
+		4658FAA61FD8266B00A9588A /* WikiFaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiFaceViewController.swift; sourceTree = "<group>"; };
 		4672321B1FD1735A00C29849 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		467232211FD1753600C29849 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		467232221FD176B700C29849 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -303,6 +305,15 @@
 			);
 			path = "29-ImagePickerSheetController";
 			sourceTree = "<group>";
+		};
+		4658FAA51FD8266B00A9588A /* 30-WikiFace */ = {
+			isa = PBXGroup;
+			children = (
+				4658FAA61FD8266B00A9588A /* WikiFaceViewController.swift */,
+			);
+			name = "30-WikiFace";
+			path = "MXDailySwift/30-WikiFace";
+			sourceTree = SOURCE_ROOT;
 		};
 		4672321A1FD1731500C29849 /* 26-CoreDataApp */ = {
 			isa = PBXGroup;
@@ -610,6 +621,7 @@
 				46A0A2551FD27B8B001B6E43 /* 27-TabbarApp */,
 				468D144F1FD57B8600E3A29A /* 28-Spotlight */,
 				464BC71E1FD6C35700157339 /* 29-ImagePickerSheetController */,
+				4658FAA51FD8266B00A9588A /* 30-WikiFace */,
 				46F051691E043990006930F5 /* Main.storyboard */,
 				46F0516E1E043990006930F5 /* LaunchScreen.storyboard */,
 				468CF4DD1FCED95400F29EEA /* Support */,
@@ -888,6 +900,7 @@
 				468CF4DB1FCED8F800F29EEA /* SWRevealViewController.m in Sources */,
 				467604081FCC51B7005FD155 /* SwipeableTableViewController.swift in Sources */,
 				468CF4CD1FCD8AE700F29EEA /* QuickActionHandler.swift in Sources */,
+				4658FAA71FD8266B00A9588A /* WikiFaceViewController.swift in Sources */,
 				46BE911A1FD03718002DD3FD /* ScaleViewController.swift in Sources */,
 				46F051EF1E0660A6006930F5 /* ImageScrollerEffectVC.swift in Sources */,
 				467232231FD176B700C29849 /* CoreDataManager.swift in Sources */,
