@@ -87,6 +87,7 @@
 		46D410E31EDDB6AE00047C5A /* ClearTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410E21EDDB6AE00047C5A /* ClearTableViewController.swift */; };
 		46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410E41EDDB6E300047C5A /* ClearTableViewCell.swift */; };
 		46E0C0E91FD5A68A007AD8DB /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0C0E81FD5A68A007AD8DB /* MovieDetailViewController.swift */; };
+		46E0C0EB1FD84C79007AD8DB /* WikiFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0C0EA1FD84C79007AD8DB /* WikiFace.swift */; };
 		46EB83C81EE1D91D00FE8336 /* SplashAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB83C71EE1D91D00FE8336 /* SplashAnimation.swift */; };
 		46F051661E043990006930F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F051651E043990006930F5 /* AppDelegate.swift */; };
 		46F051681E043990006930F5 /* ProjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F051671E043990006930F5 /* ProjViewController.swift */; };
@@ -208,6 +209,7 @@
 		46D410E21EDDB6AE00047C5A /* ClearTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClearTableViewController.swift; path = "11-ClearTableViewCell/ClearTableViewController.swift"; sourceTree = "<group>"; };
 		46D410E41EDDB6E300047C5A /* ClearTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClearTableViewCell.swift; path = "11-ClearTableViewCell/ClearTableViewCell.swift"; sourceTree = "<group>"; };
 		46E0C0E81FD5A68A007AD8DB /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		46E0C0EA1FD84C79007AD8DB /* WikiFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiFace.swift; sourceTree = "<group>"; };
 		46EB83C71EE1D91D00FE8336 /* SplashAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashAnimation.swift; path = "15-SpashAnimation/SplashAnimation.swift"; sourceTree = "<group>"; };
 		46F051621E043990006930F5 /* DailySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F051651E043990006930F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				4658FAA61FD8266B00A9588A /* WikiFaceViewController.swift */,
+				46E0C0EA1FD84C79007AD8DB /* WikiFace.swift */,
 			);
 			name = "30-WikiFace";
 			path = "MXDailySwift/30-WikiFace";
@@ -859,6 +862,7 @@
 				46D1873D1FC2DE2300E7B8DA /* LimitCharsViewController.swift in Sources */,
 				46BE91161FD03705002DD3FD /* PositionViewController.swift in Sources */,
 				469561511FBC683100E60233 /* MenuViewController.swift in Sources */,
+				46E0C0EB1FD84C79007AD8DB /* WikiFace.swift in Sources */,
 				46D410E31EDDB6AE00047C5A /* ClearTableViewController.swift in Sources */,
 				468CF4E11FCEDE2E00F29EEA /* ChannelViewController.swift in Sources */,
 				468CF4E31FCEDE4700F29EEA /* FriendReadViewController.swift in Sources */,
