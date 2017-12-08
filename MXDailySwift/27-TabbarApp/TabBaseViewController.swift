@@ -23,7 +23,6 @@ class TabBaseViewController: UIViewController {
             return
         }
         
-        navigationController?.isNavigationBarHidden = true
         imageView.alpha = 0
         imageView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
     }
