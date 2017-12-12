@@ -25,13 +25,13 @@
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "iphone_sw@2x.png",
+      "filename" : "spotlight_sw@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "app_sw@2x-1.png",
+      "filename" : "spotlight_sw@3x.png",
       "scale" : "3x"
     },
     {
