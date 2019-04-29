@@ -22,8 +22,6 @@
 		4658FAA71FD8266B00A9588A /* WikiFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658FAA61FD8266B00A9588A /* WikiFaceViewController.swift */; };
 		4672321C1FD1735A00C29849 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4672321B1FD1735A00C29849 /* CoreDataViewController.swift */; };
 		467232231FD176B700C29849 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467232221FD176B700C29849 /* CoreDataManager.swift */; };
-		467232261FD18BDC00C29849 /* cd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 467232241FD18BDC00C29849 /* cd.xcdatamodeld */; };
-		467232271FD18BFE00C29849 /* cd.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 467232241FD18BDC00C29849 /* cd.xcdatamodeld */; };
 		467458E71EDF15E000026CC7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458E61EDF15E000026CC7 /* SignUpViewController.swift */; };
 		467458E91EDF15FE00026CC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458E81EDF15FE00026CC7 /* LoginViewController.swift */; };
 		467458EC1EDFE73600026CC7 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467458EB1EDFE73600026CC7 /* FirstTableViewController.swift */; };
@@ -71,7 +69,6 @@
 		46B08D8B1FD6D34200314491 /* ImagePreviewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D811FD6D33F00314491 /* ImagePreviewFlowLayout.swift */; };
 		46B08D8C1FD6D34200314491 /* ImagePreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D821FD6D33F00314491 /* ImagePreviewTableViewCell.swift */; };
 		46B08D8D1FD6D34200314491 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B08D831FD6D33F00314491 /* Images.xcassets */; };
-		46B08D8E1FD6D34200314491 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46B08D841FD6D33F00314491 /* Info.plist */; };
 		46B08D8F1FD6D34200314491 /* PreviewSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B08D851FD6D33F00314491 /* PreviewSupplementaryView.swift */; };
 		46BE91141FD036F2002DD3FD /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91131FD036F2002DD3FD /* OpacityViewController.swift */; };
 		46BE91161FD03705002DD3FD /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BE91151FD03705002DD3FD /* PositionViewController.swift */; };
@@ -86,6 +83,7 @@
 		46D410E01EDC4E4100047C5A /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 46D410D11EDB2CDA00047C5A /* moments.mp4 */; };
 		46D410E31EDDB6AE00047C5A /* ClearTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410E21EDDB6AE00047C5A /* ClearTableViewController.swift */; };
 		46D410E51EDDB6E300047C5A /* ClearTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D410E41EDDB6E300047C5A /* ClearTableViewCell.swift */; };
+		46D595342276FEB00033FA56 /* cd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 467232241FD18BDC00C29849 /* cd.xcdatamodeld */; };
 		46E0C0E91FD5A68A007AD8DB /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0C0E81FD5A68A007AD8DB /* MovieDetailViewController.swift */; };
 		46E0C0EB1FD84C79007AD8DB /* WikiFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0C0EA1FD84C79007AD8DB /* WikiFace.swift */; };
 		46EB83C81EE1D91D00FE8336 /* SplashAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB83C71EE1D91D00FE8336 /* SplashAnimation.swift */; };
@@ -744,7 +742,7 @@
 				TargetAttributes = {
 					46F051611E043990006930F5 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 6TXH82S459;
+						DevelopmentTeam = D27QQH72P5;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -794,8 +792,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46B08D8E1FD6D34200314491 /* Info.plist in Resources */,
-				467232271FD18BFE00C29849 /* cd.xcdatamodeld in Resources */,
 				468D9F4F1FB99BB4008DC057 /* Assets.xcassets in Resources */,
 				46D410E01EDC4E4100047C5A /* moments.mp4 in Resources */,
 				46F051701E043990006930F5 /* LaunchScreen.storyboard in Resources */,
@@ -834,6 +830,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D595342276FEB00033FA56 /* cd.xcdatamodeld in Sources */,
 				46F051981E044DEF006930F5 /* StopViewController.swift in Sources */,
 				468CF4E71FCEDE8700F29EEA /* BackTableViewController.swift in Sources */,
 				46B08D891FD6D34200314491 /* ImagePickerCollectionView.swift in Sources */,
@@ -900,7 +897,6 @@
 				46A0A2591FD27C4E001B6E43 /* SecondViewController.swift in Sources */,
 				468D145A1FD57B8700E3A29A /* MovieSummaryCell.swift in Sources */,
 				4619695D1EF2A1B900029FE4 /* MenuTransitionManager.swift in Sources */,
-				467232261FD18BDC00C29849 /* cd.xcdatamodeld in Sources */,
 				468CF4DB1FCED8F800F29EEA /* SWRevealViewController.m in Sources */,
 				467604081FCC51B7005FD155 /* SwipeableTableViewController.swift in Sources */,
 				468CF4CD1FCD8AE700F29EEA /* QuickActionHandler.swift in Sources */,
@@ -1077,11 +1073,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 6TXH82S459;
+				DEVELOPMENT_TEAM = D27QQH72P5;
 				INFOPLIST_FILE = MXDailySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mi.liveassistant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.dailyswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MXDailySwift/DailySwift-Bridging-Header.h";
@@ -1096,11 +1092,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 6TXH82S459;
+				DEVELOPMENT_TEAM = D27QQH72P5;
 				INFOPLIST_FILE = MXDailySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mi.liveassistant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.dailyswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MXDailySwift/DailySwift-Bridging-Header.h";
