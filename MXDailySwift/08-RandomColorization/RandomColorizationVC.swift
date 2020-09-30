@@ -21,7 +21,7 @@ class RandomColorizationVC: UIViewController {
         let bgMusic = URL(string: Bundle.main.path(forResource: "Ecstasy", ofType: "mp3")!)
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
             try AVAudioSession.sharedInstance().setActive(true)
             try audioPlayer = AVAudioPlayer(contentsOf: bgMusic!)
             
@@ -69,11 +69,12 @@ class RandomColorizationVC: UIViewController {
         self.view.backgroundColor = UIColor(red: redValue, green: greenValue, blue: blueVaule, alpha: 1.0)
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        UIApplication.shared.isStatusBarHidden = true
-
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -84,4 +85,9 @@ class RandomColorizationVC: UIViewController {
         player.pause()
     }
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
 }

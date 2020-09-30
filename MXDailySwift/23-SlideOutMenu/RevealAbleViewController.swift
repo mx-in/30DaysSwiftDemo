@@ -10,17 +10,20 @@ import UIKit
 
 class RevealAbleViewController: UIViewController {
 
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIApplication.shared.isStatusBarHidden = true
-//        self.navigationController?.isNavigationBarHidden = true
-        
+
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
 
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
     }
+    
 
 }

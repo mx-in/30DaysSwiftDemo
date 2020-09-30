@@ -89,7 +89,7 @@ struct WikiFace {
         
         var face: CIFaceFeature!
         features?.forEach({ rect in
-            face = rect as! CIFaceFeature
+            face = rect as? CIFaceFeature
         })
         
         var faceRectWithExtendedBounds = face.bounds

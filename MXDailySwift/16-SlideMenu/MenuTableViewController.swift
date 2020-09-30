@@ -20,7 +20,7 @@ class MenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.view.backgroundColor = UIColor(red:0.109, green:0.114, blue:0.128, alpha:1)
     }
     

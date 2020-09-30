@@ -49,7 +49,7 @@ class MenuTransitionManager: NSObject, UIViewControllerTransitioningDelegate, UI
             container.addSubview(snapshot!)
         }
         
-        UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.0, options: UIViewAnimationOptions(), animations: {
+        UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.0, options: UIView.AnimationOptions(), animations: {
             
             if self.isPresenting {
                 self.snapshot?.transform = moveDown

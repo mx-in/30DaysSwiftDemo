@@ -36,7 +36,7 @@ class FirstViewController: UIViewController {
         
         articleTableView.dataSource = self
         articleTableView.delegate = self
-        articleTableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        articleTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         articleTableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
@@ -53,7 +53,7 @@ class FirstViewController: UIViewController {
         
         articleTableView.visibleCells.forEach { cell in
             UIView.animate(withDuration: 1.0,
-                           delay: 0.05 * Double(articleTableView.visibleCells.index(of: cell)!),
+                           delay: 0.05 * Double(articleTableView.visibleCells.firstIndex(of: cell)!),
                            usingSpringWithDamping: 0.8,
                            initialSpringVelocity: 0,
                            options: [],

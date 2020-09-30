@@ -84,7 +84,7 @@ class ImageScrollerEffectVC: UIViewController, UIScrollViewDelegate {
         let horizontalSapce = imageSize.width > scrollViewSize.width ? 0 : (scrollViewSize.width - imageSize.width) / 2.0
         let verticalSpace = imageSize.height > scrollViewSize.height ? 0 : (scrollViewSize.height - imageSize.height) / 2.0
         
-        scrollView.contentInset = UIEdgeInsetsMake(verticalSpace, horizontalSapce, verticalSpace, horizontalSapce)
+        scrollView.contentInset = UIEdgeInsets.init(top: verticalSpace, left: horizontalSapce, bottom: verticalSpace, right: horizontalSapce)
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {

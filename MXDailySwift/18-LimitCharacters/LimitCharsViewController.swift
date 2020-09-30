@@ -28,8 +28,8 @@ class LimitCharsViewController: UIViewController {
         textView.delegate = self
         textView.backgroundColor = UIColor.clear
         
-        NotificationCenter.default.addObserver(self, selector: #selector(LimitCharsViewController.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(LimitCharsViewController.keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(LimitCharsViewController.keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(LimitCharsViewController.keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
     
@@ -68,8 +68,8 @@ extension LimitCharsViewController {
     fileprivate func keyboardInfo(from notification: NSNotification) -> (height: CGFloat, duration: Double) {
         let userInfo = notification.userInfo
         
-        let keyboardBounds = (userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        let duration = (userInfo![UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+        let keyboardBounds = (userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let duration = (userInfo![UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
         
         return (keyboardBounds.size.height, duration);
     }
@@ -80,7 +80,7 @@ extension LimitCharsViewController {
         }
     }
     
-    func playBottomAnimations(_ animations: @escaping (() -> Void), withDuration duration: Double, withAnimationOptions options: UIViewAnimationOptions) {
+    func playBottomAnimations(_ animations: @escaping (() -> Void), withDuration duration: Double, withAnimationOptions options: UIView.AnimationOptions) {
         if duration > 0 {
             UIView.animate(withDuration: duration, delay: 0.0, options: options, animations: animations, completion: nil)
         } else {
@@ -88,8 +88,8 @@ extension LimitCharsViewController {
         }
     }
     
-    fileprivate func animationOptions(from userInfo: [AnyHashable : Any]) -> UIViewAnimationOptions {
-        return UIViewAnimationOptions(rawValue: (userInfo[UIKeyboardAnimationCurveUserInfoKey] as! NSNumber).uintValue << 16)
+    fileprivate func animationOptions(from userInfo: [AnyHashable : Any]) -> UIView.AnimationOptions {
+        return UIView.AnimationOptions(rawValue: (userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as! NSNumber).uintValue << 16)
     }
 }
 

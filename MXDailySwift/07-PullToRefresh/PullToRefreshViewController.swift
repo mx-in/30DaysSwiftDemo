@@ -34,19 +34,19 @@ class PullToRefreshViewController: UIViewController, UITableViewDataSource {
         self.refreshControl.addTarget(self, action: #selector(PullToRefreshViewController.didReloadEmoji), for: .valueChanged)
         self.refreshControl.backgroundColor = UIColor(red:0.113, green:0.113, blue:0.145, alpha:1)
         
-        let attribute = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        let attribute = [NSAttributedString.Key.foregroundColor : UIColor.white]
         refreshControl.attributedTitle = NSAttributedString(string: "Last Updated on \(Date())", attributes: attribute)
         refreshControl.tintColor = UIColor.white
         
         self.title = "emoji"
         
 //        lt row height is changed to the value set in Interface Builder. To get the expected self-sizing behavior for a cell that you create in Interface Builder, you must explicitly set rowHeight equal to UITableViewAutomaticDimension in your code.
-        emojiTableView?.rowHeight = UITableViewAutomaticDimension
+        emojiTableView?.rowHeight = UITableView.automaticDimension
         
 //        Providing a nonnegative estimate of the height of rows can improve the performance of loading the table view. If the table contains variable height rows
         emojiTableView?.estimatedRowHeight = 60.0
         emojiTableView?.tableFooterView = UIView(frame: CGRect.zero)
-        emojiTableView?.separatorStyle = UITableViewCellSeparatorStyle.none
+        emojiTableView?.separatorStyle = UITableViewCell.SeparatorStyle.none
         
         self.view.addSubview(emojiTableView!)
     }
@@ -73,7 +73,7 @@ class PullToRefreshViewController: UIViewController, UITableViewDataSource {
         cell.textLabel?.textAlignment = NSTextAlignment.center
         cell.textLabel?.font = UIFont.systemFont(ofSize: 50)
         cell.backgroundColor = UIColor.clear
-        cell.selectionStyle = UITableViewCellSelectionStyle.none;
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none;
         
         return cell
     }

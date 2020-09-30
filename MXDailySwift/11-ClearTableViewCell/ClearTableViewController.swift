@@ -14,10 +14,12 @@ class ClearTableViewController: UITableViewController {
     
     var cellBackgroundForIndex: ((Int) -> UIColor)? = nil
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        UIApplication.shared.isStatusBarHidden = true
         
         self.view.backgroundColor = UIColor.black
         self.tableView.separatorStyle = .none

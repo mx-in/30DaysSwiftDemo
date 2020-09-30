@@ -32,7 +32,7 @@ class ProjViewController: UITableViewController {
        let cell = tableView.dequeueReusableCell(withIdentifier: projCellIdentify)! as UITableViewCell
         
         cell.textLabel?.text = "\(indexPath.row + 1) - \(projects[indexPath.row])"
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         return cell
     }

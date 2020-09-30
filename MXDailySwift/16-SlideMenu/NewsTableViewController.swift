@@ -20,7 +20,7 @@ class NewsTableViewController: UITableViewController, MenuTransitionManagerDeleg
         super.viewDidLoad()
         
         self.title = "Everyday Moments"
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.view.backgroundColor = UIColor(red:0.062, green:0.062, blue:0.07, alpha:1)
     }
     

@@ -34,7 +34,7 @@ class SplashAnimation: NSObject, CAAnimationDelegate {
         animationView!.addSubview(imageView)
         
         mask.contents = UIImage(named: "twitter")?.cgImage
-        mask.contentsGravity = kCAGravityResizeAspect
+        mask.contentsGravity = CALayerContentsGravity.resizeAspect
         mask.bounds = CGRect(x: 0, y: 0, width: 100, height: 81)
         mask.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         mask.position = CGPoint(x: imageView.frame.size.width / 2, y: imageView.frame.size.height / 2)
@@ -51,7 +51,7 @@ class SplashAnimation: NSObject, CAAnimationDelegate {
         keyFrameAnimation.delegate = self
         keyFrameAnimation.duration = 0.6
         keyFrameAnimation.beginTime = CACurrentMediaTime() + 0.5
-        keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)]
+        keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut), CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)]
         let initialBounds = NSValue(cgRect: mask.bounds)
         let secondBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 90, height: 73))
         let finalBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 2600, height: 1600))

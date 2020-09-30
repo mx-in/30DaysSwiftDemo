@@ -34,14 +34,14 @@ public class ImagePickerSheetController: UIViewController, UITableViewDataSource
     private lazy var collectionView: ImagePickerCollectionView = {
         let collectionView = ImagePickerCollectionView()
         collectionView.backgroundColor = .clear
-        collectionView.imagePreviewLayout.sectionInset = UIEdgeInsetsMake(collectionViewInset, collectionViewInset, collectionViewInset, collectionViewInset)
+        collectionView.imagePreviewLayout.sectionInset = UIEdgeInsets.init(top: collectionViewInset, left: collectionViewInset, bottom: collectionViewInset, right: collectionViewInset)
         collectionView.imagePreviewLayout.showsSupplementaryViews = false
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.alwaysBounceHorizontal = true
         collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(ImageCollectionViewCell.self))
-        collectionView.register(PreviewSupplementaryView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: NSStringFromClass(PreviewSupplementaryView.self))
+        collectionView.register(PreviewSupplementaryView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: NSStringFromClass(PreviewSupplementaryView.self))
         
         return collectionView
     }()
@@ -180,9 +180,9 @@ public class ImagePickerSheetController: UIViewController, UITableViewDataSource
     }
     
     public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let view = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: NSStringFromClass(PreviewSupplementaryView.self), for: indexPath) as! PreviewSupplementaryView
+        let view = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: NSStringFromClass(PreviewSupplementaryView.self), for: indexPath) as! PreviewSupplementaryView
         view.isUserInteractionEnabled = false
-        view.buttonInset = UIEdgeInsetsMake(0.0, collectionViewCheckmarkInset, collectionViewCheckmarkInset, 0.0)
+        view.buttonInset = UIEdgeInsets.init(top: 0.0, left: collectionViewCheckmarkInset, bottom: collectionViewCheckmarkInset, right: 0.0)
         view.selected = selectedPhotoIndices.contains((indexPath as NSIndexPath).section)
         
         supplementaryViews[(indexPath as NSIndexPath).section] = view
@@ -253,7 +253,7 @@ public class ImagePickerSheetController: UIViewController, UITableViewDataSource
             }
         }
         else {
-            selectedPhotoIndices.remove(at: selectedPhotoIndices.index(of: (indexPath as NSIndexPath).section)!)
+            selectedPhotoIndices.remove(at: selectedPhotoIndices.firstIndex(of: (indexPath as NSIndexPath).section)!)
             reloadButtonTitles()
         }
         

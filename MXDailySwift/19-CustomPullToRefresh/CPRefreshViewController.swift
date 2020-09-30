@@ -48,11 +48,11 @@ class CPRefreshViewController: UIViewController {
     func loadCustomRefreshContents() {
         
         let refreshContents = Bundle.main.loadNibNamed("RefreshContents", owner: self, options: nil)
-        customRefreshView = refreshContents![0] as! UIView
+        customRefreshView = refreshContents![0] as? UIView
         customRefreshView.frame = refreshControl.bounds
         
         _ = customRefreshView.subviews.map { subView in
-            let viewTag = customRefreshView.subviews.index(of: subView)! + 1
+            let viewTag = customRefreshView.subviews.firstIndex(of: subView)! + 1
             lablesArr.append(customRefreshView.viewWithTag(viewTag) as! UILabel)
         }
         refreshControl.addSubview(customRefreshView)

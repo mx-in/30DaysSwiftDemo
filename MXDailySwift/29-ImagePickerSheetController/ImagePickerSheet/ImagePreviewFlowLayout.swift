@@ -98,7 +98,7 @@ class ImagePreviewFlowLayout: UICollectionViewFlowLayout {
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return layoutAttributes.filter { rect.intersects($0.frame) }.reduce([UICollectionViewLayoutAttributes]()) { memo, attributes in
-            let supplementaryAttributes = layoutAttributesForSupplementaryView(ofKind: UICollectionElementKindSectionHeader, at: attributes.indexPath)
+            let supplementaryAttributes = layoutAttributesForSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, at: attributes.indexPath)
             var allAttributes = memo
             allAttributes.append(attributes)
             allAttributes.append(supplementaryAttributes!)

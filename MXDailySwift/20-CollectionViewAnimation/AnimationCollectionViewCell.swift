@@ -26,7 +26,7 @@ class AnimationCollectionViewCell: UICollectionViewCell {
     func handleCellSelected() {
         animationTextView.isScrollEnabled = false
         backButton.isHidden = false
-        self.superview?.bringSubview(toFront: self)
+        self.superview?.bringSubviewToFront(self)
     }
     
     private func addTapEventHandler() {

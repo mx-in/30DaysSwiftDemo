@@ -743,7 +743,7 @@
 					46F051611E043990006930F5 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = D27QQH72P5;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1200;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -754,14 +754,14 @@
 					46F051751E043990006930F5 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = NTDRU2P6T4;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1200;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 46F051611E043990006930F5;
 					};
 					46F051801E043990006930F5 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = NTDRU2P6T4;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1200;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 46F051611E043990006930F5;
 					};
@@ -769,7 +769,7 @@
 			};
 			buildConfigurationList = 46F0515D1E043990006930F5 /* Build configuration list for PBXProject "DailySwift" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -1083,7 +1083,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "MXDailySwift/DailySwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1101,7 +1101,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MXDailySwift/DailySwift-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1116,7 +1116,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = my.mxin.MXDailySwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailySwift.app/DailySwift";
 			};
 			name = Debug;
@@ -1132,7 +1132,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = my.mxin.MXDailySwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailySwift.app/DailySwift";
 			};
 			name = Release;
@@ -1148,7 +1148,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = DailySwift;
 			};
 			name = Debug;
@@ -1164,7 +1164,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = DailySwift;
 			};
 			name = Release;

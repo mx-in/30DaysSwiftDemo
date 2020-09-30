@@ -19,7 +19,7 @@ class PositionViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 0.8, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.8, options: UIViewAnimationOptions(), animations: {
+        UIView.animate(withDuration: 0.8, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.8, options: UIView.AnimationOptions(), animations: {
             self.leftEye.center.x = self.view.bounds.width - self.leftEye.center.x
             self.leftEye.center.y = self.leftEye.center.y + 30
             self.rightEye.center.x = self.view.bounds.width - self.rightEye.center.x

@@ -64,11 +64,11 @@ fileprivate let moviePlayer = AVPlayerViewController()
         didSet {
             switch fillMode {
             case .resize:
-                moviePlayer.videoGravity = AVLayerVideoGravity.resizeAspect.rawValue
+                moviePlayer.videoGravity = convertToAVLayerVideoGravity(AVLayerVideoGravity.resizeAspect.rawValue)
             case .resizeAspectFill:
-                moviePlayer.videoGravity = AVVideoScalingModeResizeAspectFill
+                moviePlayer.videoGravity = convertToAVLayerVideoGravity(AVVideoScalingModeResizeAspectFill)
             case .resizeAspect:
-                moviePlayer.videoGravity = AVLayerVideoGravity.resizeAspect.rawValue
+                moviePlayer.videoGravity = convertToAVLayerVideoGravity(AVLayerVideoGravity.resizeAspect.rawValue)
             }
         }
     }
@@ -77,7 +77,7 @@ fileprivate let moviePlayer = AVPlayerViewController()
         moviePlayer.view.frame = videoFrame
         moviePlayer.showsPlaybackControls = false
         view.addSubview(moviePlayer.view)
-        view.sendSubview(toBack: moviePlayer.view)
+        view.sendSubviewToBack(moviePlayer.view)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -97,8 +97,13 @@ fileprivate let moviePlayer = AVPlayerViewController()
     }
     
     @objc func playerItemDidReachEnd() {
-        moviePlayer.player?.seek(to: kCMTimeZero)
+        moviePlayer.player?.seek(to: CMTime.zero)
         moviePlayer.player?.play()
     }
     
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToAVLayerVideoGravity(_ input: String) -> AVLayerVideoGravity {
+	return AVLayerVideoGravity(rawValue: input)
 }
